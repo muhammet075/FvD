@@ -1,27 +1,210 @@
 /* CSS Document */
 
 /* FONTS */
-@font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 
+@font-face {
+    font-family: 'oreos';
+    src: url('../fonts/oreos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 /* ALGEMENE STYLING */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0 auto;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --oreoachtergrond: #000;
+        --oreozwart: #272727;
+        --oreocreme: #bbbcbc;
+        --oreoblauw: #7CC6F2;
+        --wit: #ffff;
+        --zwart: #000;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        --oreoachtergrond: #ffff;
+        --oreozwart: #000;
+        --oreocreme: #dcdcdc;
+        --oreoblauw: #003087;
+        --wit: #ffff;
+        --zwart: #000;
+    }
+}
+
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+    color: #111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.oreo {
+    background-color: var(--oreoachtergrond);
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+    font-family: oreos;
+    display: grid;
+    align-items: center;
+}
+
+.oreo h1 {
+    color: var(--oreoblauw);
+    font-size: 6em;
+    letter-spacing: -10px;
+}
+
+.oreo .letteranimatie span:first-child {
+    position: absolute;
+    display: inline-block;
+    margin-left: -108px;
+    animation: oreo-lettervooruit;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.oreo .animatie span:last-child {
+    color: var(--oreocreme);
+    position: absolute;
+    margin-left: 20px;
+    z-index: 999;
+    animation-name: oreo-koekjevooruit;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.oreo .animatie span:last-child:before {
+    content: '';
+    display: inline-block;
+    width: 120px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: var(--oreozwart);
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -15px;
+}
+
+
+.oreo .animatie span:last-child:after {
+    content: '';
+    display: inline-block;
+    width: 110px;
+    height: 85px;
+    border-radius: 100px;
+    background-color: var(--oreozwart);
+    position: absolute;
+    margin-left: -95px;
+    margin-top: 12px;
+    z-index: -999
+}
 
 /* BRAND STYLING */
 
+
+@keyframes oreo-lettervooruit {
+
+    0% {
+        margin-left: -110px;
+    }
+
+    20% {
+        margin-top: -90px;
+        margin-left: -110px;
+    }
+
+    40% {
+        margin-top: -100px;
+        margin-left: -50px;
+    }
+
+    70% {
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+
+    90% {
+        margin-top: -100px;
+        margin-left: 180px;
+    }
+
+    100% {
+        margin-left: 180px;
+    }
+}
+
+@keyframes oreo-koekjevooruit {
+    0% {
+        margin-left: 20px;
+    }
+
+    10% {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    20% {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    30% {
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+
+    40% {
+        margin-left: 40px;
+        margin-top: 110px;
+    }
+
+    50% {
+        margin-left: 30px;
+        margin-top: 130px;
+    }
+
+    60% {
+        margin-left: -100px;
+        margin-top: 140px;
+    }
+
+    70% {
+        margin-left: -200px;
+        margin-top: 140px;
+    }
+
+    80% {
+        margin-left: -250px;
+        margin-top: 100px;
+    }
+
+    90% {
+        margin-left: -270px;
+        margin-top: 30px;
+    }
+
+    100% {
+        margin-left: -276px;
+        margin-top: 10px;
+    }
+
+
+}
