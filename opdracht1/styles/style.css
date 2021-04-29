@@ -4,7 +4,6 @@
 
 @font-face {
     font-family: 'oreos';
-    src: url('../fonts/oreos.woff') format('woff');
     src: url("~@/assets/../fonts/oreos.woff") format('woff');
     font-weight: normal;
     font-style: normal;
