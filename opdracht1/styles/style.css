@@ -34,8 +34,8 @@
         --oreocreme: #bbbcbc;
         --oreoblauw: #003087;
 
-        --ulkerachtergrond: #77030f;
-        --ulkerrood: #e3051b;
+        --ulkerachtergrond: #5f040d;
+        --ulkerrood: #ef0018;
 
         --wit: #ffff;
         --zwart: #000;
@@ -50,8 +50,8 @@
         --oreocreme: #dcdcdc;
         --oreoblauw: #7CC6F2;
 
-        --ulkerachtergrond: #f52d42;
-        --ulkerrood: #e3051b;
+        --ulkerachtergrond: #ff909c;
+        --ulkerrood: #da081d;
 
         --wit: #ffff;
         --zwart: #000;
@@ -233,6 +233,19 @@ body {
     margin-top: -60px;
 }
 
+
+.ulker h1 span:nth-child(5)::after {
+    content: '🍫';
+    display: inline-block;
+    animation: chocoreep 7s forwards;;
+    position: absolute;
+    font-size: 6rem;
+    margin-top: 140px;
+    margin-left: -210px;
+    z-index: 999;
+    opacity: 0;
+}
+
 /* BRAND STYLING */
 
 @keyframes ulker-letter1 {
@@ -323,6 +336,22 @@ body {
 
 }
 
+
+@keyframes chocoreep {
+
+    0%{
+        opacity: 0;
+    }
+    
+    90%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    
+    }
+}
 
 
 
