@@ -9,6 +9,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ulker';
+    src: url('../fonts/ulker.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 /* ALGEMENE STYLING */
 *,
@@ -21,10 +29,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --oreoachtergrond: #000;
+        --oreoachtergrond: #ffff;
         --oreozwart: #272727;
         --oreocreme: #bbbcbc;
-        --oreoblauw: #7CC6F2;
+        --oreoblauw: #003087;
+
+        --ulkerachtergrond: #77030f;
+        --ulkerrood: #e3051b;
+
         --wit: #ffff;
         --zwart: #000;
     }
@@ -36,7 +48,11 @@
         --oreoachtergrond: #ffff;
         --oreozwart: #000;
         --oreocreme: #dcdcdc;
-        --oreoblauw: #003087;
+        --oreoblauw: #7CC6F2;
+
+        --ulkerachtergrond: #f52d42;
+        --ulkerrood: #e3051b;
+
         --wit: #ffff;
         --zwart: #000;
     }
@@ -48,6 +64,17 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .oreo,
+    .ulker {
+        zoom: 0.7;
+    }
 }
 
 .oreo {
@@ -73,7 +100,7 @@ body {
     margin-left: -108px;
     animation: oreo-lettervooruit;
     animation-delay: 3s;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -117,7 +144,197 @@ body {
     z-index: -999
 }
 
+
+
+
+
+
+.ulker {
+    background-color: var(--ulkerachtergrond);
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+    font-family: ulker;
+    display: grid;
+    align-items: center;
+}
+
+.ulker h1 {
+    color: var(--ulkerrood);
+    font-size: 8em;
+    font-weight: 100;
+    letter-spacing: -19px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.ulker h1 span:nth-child(1) {
+    animation: ulker-letter1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
+    margin-left: -165px;
+    margin-top: -60px;
+}
+
+.ulker h1 span:nth-child(2) {
+    animation: ulker-letter2;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
+    margin-left: -88px;
+    margin-top: -60px;
+}
+
+.ulker h1 span:nth-child(3) {
+    animation: ulker-letter3;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
+    margin-left: -28px;
+    margin-top: -60px;
+}
+
+.ulker h1 span:nth-child(4) {
+    animation: ulker-letter4;
+    animation-delay: 3.5s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
+    margin-left: 49px;
+    margin-top: -60px;
+}
+
+.ulker h1 span:nth-child(5) {
+    animation: ulker-letter5;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: inline-block;
+    margin-left: 109px;
+    margin-top: -60px;
+}
+
 /* BRAND STYLING */
+
+@keyframes ulker-letter1 {
+
+    10% {
+        margin-left: 900px;
+    }
+
+    50% {
+        margin-top: -600px;
+        margin-left: -165px;
+    }
+
+
+    100% {
+        margin-top: -60px;
+    }
+
+}
+
+
+@keyframes ulker-letter2 {
+
+    10% {
+        margin-left: 900px;
+    }
+
+    60% {
+        margin-top: -600px;
+        margin-left: -88px;
+    }
+
+    100% {
+        margin-top: -60px;
+    }
+
+}
+
+
+@keyframes ulker-letter3 {
+
+    10% {
+        margin-left: 900px;
+    }
+
+    70% {
+        margin-top: -600px;
+        margin-left: -28px;
+    }
+
+    100% {
+        margin-top: -60px;
+    }
+
+}
+
+@keyframes ulker-letter4 {
+
+    10% {
+        margin-left: 900px;
+    }
+
+    75% {
+        margin-top: -600px;
+        margin-left: 49px;
+    }
+
+    100% {
+        margin-top: -60px;
+    }
+
+}
+
+@keyframes ulker-letter5 {
+
+    10% {
+        margin-left: 900px;
+    }
+
+    80% {
+        margin-top: -600px;
+        margin-left: 109px;
+    }
+
+    100% {
+        margin-top: -60px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes oreo-lettervooruit {
@@ -129,16 +346,6 @@ body {
     20% {
         margin-top: -90px;
         margin-left: -110px;
-    }
-
-    40% {
-        margin-top: -100px;
-        margin-left: -50px;
-    }
-
-    70% {
-        margin-top: -100px;
-        margin-left: 0px;
     }
 
     90% {
