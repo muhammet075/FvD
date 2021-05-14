@@ -9,9 +9,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. https://www.w3schools.com/
-2. https://css-tricks.com/
-3. https://developer.mozilla.org/
+1. https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp - CSS Keyframes
+2. https://www.w3schools.com/css/css3_animations.asp - CSS Animaties
+3. https://css-tricks.com/almanac/properties/a/animation/ - CSS Animaties
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/animation - CSS Animaties
+5. https://fontmeme.com/oreo-font/ - Oreo font
+6. https://applecolors.com/palette/10780-oreo-logo - Oreo kleur pallet
+7. ttps://worldvectorlogo.com/nl/logo/ulker-1 - Ulker SVG logo
+8. https://www.calligraphr.com/en/ - Eigen font maken
 
 
 
