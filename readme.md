@@ -29,3 +29,13 @@ Toen de oreo logo de class kreeg kon ik beginnen met keyframes. De eerste 0 van 
 
 <img width="393" alt="Schermafbeelding 2021-05-14 om 17 00 39" src="https://user-images.githubusercontent.com/34505894/118289742-f0727a00-b4d5-11eb-8f19-03a9e9858304.png">
 
+## 29 April
+
+De volgende dag ging ik aan de slag met mijn Ulker logo. De font werkte en ik ging aan de slag met animeren. Als de pagina is geladen begint gelijk de animatie van de logo. De letters gaan 1 voor 1 naar rechts, en gaan buiten het beeld van de browser helemaal omhoog en naar links. Eenmaal op de zelfde Y-as vallen ze 1 voor 1 naar beneden. 
+
+<img width="355" alt="Schermafbeelding 2021-05-14 om 17 05 46" src="https://user-images.githubusercontent.com/34505894/118290383-a9d14f80-b4d6-11eb-942a-6fc4f20cf1f9.png">
+
+De letters krijgen allemaal een aparte keyframe, de eerste letter begint over 2 seconden, de andere begint dan over 2.5 seconde, de ander over 3 sec etc. Ze hebben allemaal een delay. Hierdoor gaan de letters 1 voor 1 bewegen. Eerst zat ik te puzzelen hoe ik dit moest doen, ik gaf eerst alle letters de zelfde keyframe maar dat werkte niet dus gingen ze allemaal tegelijk. Ook ging ik puzzelen met de margins om de letters niet door elkaar te halen of dat ze ween rare beweging krijgen.
+
+Na dat mijn animaties klaar waren, heb ik de body een display flex gegeven en een justify-conent space-evenly, zodat de logos mooi responisve naast elkaar komen te staan. Op een mobiel apparaat op een formaat van zo'n 760px, heb ik de body een flex-direction column-reverse gegeven, omdat de logos onderelkaar moeten komen te staan. Reverse zorgt ervoor dat de volgorde veranderd, dus dat de Ulker logo boven aan staat. Dat heb ik bewust gedaan omdat als de Ulker logo onder de Oreo logo komt te staan dan zie je die letters nog op je scherm als ze naar boven gaan en dat is lelijk. Dus Ulker logo staat nu boven aan dus dan zie je die letters niet als ze naar boven gaan.
+
