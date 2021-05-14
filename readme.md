@@ -15,14 +15,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
-## Je 'posts' (je code-dagboek)
+## 21 April - Voortgangsgesprek
 
-Je procesverslag is een soort dagboek.
-Bij elk voortgangsgesprek en het eindgesprek voeg je een ‘post’ aan je dagboek toe.
+Ik had al een klein begin gemaakt aan mijn logo's, ik had een oreo font gevonden en gedownload (https://fontmeme.com/oreo-font/). Deze had ik met @font-face rule aangeroepen, alleen werkte het nog niet. Omdat de bestandstype .ttf was had ik het online naar een .woff getransformeerd. Toen lukte het wel. Daarna heb ik de kleur codes van Oreo opgezocht (https://applecolors.com/palette/10780-oreo-logo) en heb ik de donker blauwe gebruikt bij een donkere weergave, en de lichtblauwe bij een lichte weergave. Ook dit had ik nieuw geleerd bij FvD. De Ulker logo moest ik nog gaan fixen, ik kon de font family van Ulker nergens vinden. Dus had ik een SVG logo van Ulker gedownload, (https://worldvectorlogo.com/nl/logo/ulker-1) en ik had ik dat omgezet in een eigen gemaakte font met behulp van Calligraphr. (https://www.calligraphr.com/en/)
 
-In zo’n ‘post’ neem je op:
-- Wat je van plan was
-- Je werk zo ver
-- Wat er goed ging
-- Wat er lastig is
-- Wat je plannen zijn
+<img width="412" alt="ulkerscreen" src="https://user-images.githubusercontent.com/34505894/118288971-295e1f00-b4d5-11eb-8c15-8f437d789b28.png">
