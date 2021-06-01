@@ -31,10 +31,10 @@ body {
     --wit: #ffff;
     --zwart: #3d3d3d;
     --lichtgrijs: #f5f5f5;
-    
+
     --kleur1: #7158e2;
     --kleur2: red;
-    
+
     --achtergrond1: #ffff;
     --achtergrond2: #eaeaea;
 
@@ -47,7 +47,7 @@ body {
 }
 
 
-header section{
+header section {
     background-color: var(--kleur1);
     max-width: 350px;
     text-align: center;
@@ -56,130 +56,199 @@ header section{
     border-bottom-right-radius: 15px;
 }
 
-header img{
+header img {
     width: 200px;
     height: auto;
     padding-bottom: 30px;
 }
 
-nav{
+nav {
     width: 100%;
-    height: auto;
+    height: 100px;
     margin: 30px auto;
     background-color: var(--kleur1);
     text-align: center;
     padding-bottom: 20px;
 }
 
-nav div{
+nav div {
     max-width: 750px;
     text-align: center;
-    display: flex;
 }
 
-
-nav div div:first-child{
-    background-color: yellow;
-}
-
-nav div div:last-child{
-    background-color: blue;
-}
 
 
 
 
 /* kleuren */
 
-.kleuren section{
-    padding: 20px;
+.kleuren {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-flex;
+    width: 200px;
 }
 
-.kleuren section:nth-child(1){
+.filteranimatie{
+    animation-name: filter-opzij;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.kleuren section {
+    width: 40px;
+    height: 40px;
+}
+
+.kleuren section:nth-child(1) {
     background-color: var(--rood);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.kleuren section:nth-child(2){
+.kleuren section:nth-child(2) {
     background-color: var(--groen);
 }
 
-.kleuren section:nth-child(3){
+.kleuren section:nth-child(3) {
     background-color: var(--geel);
 }
 
-.kleuren section:nth-child(4){
+.kleuren section:nth-child(4) {
     background-color: var(--blauw);
 }
 
-.kleuren section:nth-child(5){
+.kleuren section:nth-child(5) {
     background-color: var(--paars);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-#volgende{
+#volgende {
     display: none;
     position: absolute;
     right: 40%;
     margin-top: 10px;
 }
 
-
-/* landen */
-.landen{
+#opnieuw{
     display: none;
 }
 
 
-
-
-
-
-main{
-    max-width: 1200px;
+/* landen */
+.landen {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
-main div:first-child{
+.landen div {
+    display: flex;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: var(--wit);
+    width: 400px;
+}
+
+
+.landen div section {
+    padding: 0 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+/* KEYFRAMES */
+
+@keyframes filter-opzij {
+
+    
+    25% {
+        left: 500px
+    }
+
+    50% {
+        left: 1200px
+    }
+    
+    75% {
+        left: 1600px
+    }
+
+
+    100% {
+        left: 2500px
+    }
+
+}
+
+
+
+
+main {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+main div:first-child {
     display: grid;
-    grid-template-columns: auto auto auto auto;    
+    grid-template-columns: auto auto auto auto;
     grid-gap: 40px;
 }
 
-main div:first-child section{
+main div:first-child section {
     background-color: var(--lichtgrijs);
     border: 1px solid var(--achtergrond2);
 }
 
-main div:first-child section h3{
+main div:first-child section h3 {
     padding: 7px 10px;
 }
 
-main div:first-child section img{
+main div:first-child section img {
     width: 100%;
     height: auto;
 }
 
-main div:first-child section p{
+main div:first-child section p {
     padding: 7px 10px 0px 10px;
 }
 
-main div:first-child section button{
+main div:first-child section button {
     background-color: var(--kleur1);
     border: none;
     padding: 10px 30px;
     margin: 20px 10px;
 }
 
-main div:first-child section:empty{
+main div:first-child section:empty {
     display: none;
 }
 
 
 @media only screen and (max-width: 600px) {
-    header section:last-child nav ul{
+    header section:last-child nav ul {
         flex-direction: column;
     }
-    header section:last-child nav ul li{
+
+    header section:last-child nav ul li {
         margin: 20px 0;
     }
+    
+    main div:first-child {
+        grid-template-columns: auto auto;
+}
+    
+    
 }
 
 

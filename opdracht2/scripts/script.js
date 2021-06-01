@@ -30,33 +30,38 @@ var keuzeSpanje = document.querySelector("#ES");
 var keuzeGriekenland = document.querySelector("#GR");
 
 var volgendeKnop = document.querySelector("#volgende");
+var opnieuwKnop = document.querySelector("#opnieuw");
 var kleuren = document.querySelector(".kleuren");
 var landen = document.querySelector(".landen");
 
 kleuren.addEventListener("click", toonVolgende);
 
-function toonVolgende(){
+function toonVolgende() {
     volgendeKnop.style.display = "block";
 }
 
 volgendeKnop.addEventListener("click", volgendeStap)
 
-function volgendeStap(){
+function volgendeStap() {
     volgendeKnop.style.display = "none";
-    kleuren.style.display = "none";
+    kleuren.classList.add("filteranimatie");
     landen.style.display = "block";
 };
 
 
+landen.addEventListener("click", landenOpzij);
 
-
+function landenOpzij() {
+    landen.classList.add("filteranimatie");
+    opnieuwKnop.style.display = "block";
+}
 
 
 //KLEUREN FILTERS
 keuzeRood.addEventListener("click", filterRood);
 
 function filterRood() {
-    
+
     rood.forEach(function (element) {
         element.style.display = "block";
     });
@@ -223,107 +228,211 @@ function filterPaars() {
 
 };
 
-keuzeBruin.addEventListener("click", filterBruin);
 
-function filterBruin() {
-
-    bruin.forEach(function (element) {
-        element.style.display = "block";
-    });
-
-    rood.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    groen.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    geel.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    blauw.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    paars.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    oranje.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-};
-
-keuzeOranje.addEventListener("click", filterOranje);
-
-function filterOranje() {
-
-    oranje.forEach(function (element) {
-        element.style.display = "block";
-    });
-
-    rood.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    groen.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    geel.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    blauw.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    paars.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-    bruin.forEach(function (element) {
-        element.style.display = "none";
-    });
-
-};
 
 
 
 keuzeNederland.addEventListener("click", filterNederland);
 
-function filterNederland(){
+function filterNederland() {
 
     nederland.forEach(function (element) {
         element.style.display = "block";
     });
-    
+
     turkije.forEach(function (element) {
+        element.style.display = "none";
         element.parentElement.style.display = "none";
     });
-    
+
     frankrijk.forEach(function (element) {
+        element.style.display = "none";
         element.parentElement.style.display = "none";
     });
-    
+
     spanje.forEach(function (element) {
+        element.style.display = "none";
         element.parentElement.style.display = "none";
     });
 
     griekenland.forEach(function (element) {
+        element.style.display = "none";
         element.parentElement.style.display = "none";
     });
-    
+
+};
 
 
-}
+keuzeTurkije.addEventListener("click", filterTurkije);
+
+function filterTurkije() {
+
+    turkije.forEach(function (element) {
+        element.style.display = "block";
+    });
+
+    nederland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    frankrijk.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    spanje.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    griekenland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+};
 
 
 
-//LANDEN FILTERS
+keuzeFrankrijk.addEventListener("click", filterFrankrijk);
+
+function filterFrankrijk() {
+
+    frankrijk.forEach(function (element) {
+        element.style.display = "block";
+    });
+
+    nederland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    turkije.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+
+    spanje.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    griekenland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+};
+
+
+
+keuzeSpanje.addEventListener("click", filterSpanje);
+
+function filterSpanje() {
+
+    spanje.forEach(function (element) {
+        element.style.display = "block";
+    });
+
+    nederland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    turkije.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    frankrijk.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    griekenland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+};
+
+
+
+
+keuzeGriekenland.addEventListener("click", filterGriekenland);
+
+function filterGriekenland() {
+
+    griekenland.forEach(function (element) {
+        element.style.display = "block";
+    });
+
+    nederland.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    turkije.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    frankrijk.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+    spanje.forEach(function (element) {
+        element.style.display = "none";
+        element.parentElement.style.display = "none";
+    });
+
+};
+
+
+
+
+
+
+
+
+
+//OPNIEUW FUNCTIE ALLES WORDT GERESET
+opnieuwKnop.addEventListener("click", opnieuwFunctie);
+
+function opnieuwFunctie() {
+    kleuren.classList.remove("filteranimatie");
+    landen.classList.remove("filteranimatie");
+    landen.style.display = "none";
+
+    nederland.forEach(function (element) {
+        element.style.display = "block";
+        element.parentElement.style.display = "block";
+    });
+
+    turkije.forEach(function (element) {
+        element.style.display = "block";
+        element.parentElement.style.display = "block";
+    });
+
+    frankrijk.forEach(function (element) {
+        element.style.display = "block";
+        element.parentElement.style.display = "block";
+    });
+
+    spanje.forEach(function (element) {
+        element.style.display = "block";
+        element.parentElement.style.display = "block";
+    });
+
+    griekenland.forEach(function (element) {
+        element.style.display = "block";
+        element.parentElement.style.display = "block";
+    });
+};
+
 
 
 
