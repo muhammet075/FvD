@@ -1,21 +1,380 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta charset="UTF-8">
+    <meta name="author" content="jouw naam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Opdracht 2: Interactie galore - Frontend voor Designers</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Teko">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/e367b28ca4.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
-	<h1>Opdracht 2</h1>
 
-	<script src="scripts/script.js"></script>
+    <header>
+        <section>
+            <a href="#"><img src="/" alt="Logo van NaturePics" /></a>
+            <h1>NaturePics</h1>
+        </section>
+    </header>
+
+    <nav>
+        <h2>Filter</h2>
+
+        <div>
+
+
+
+
+            <div class="kleuren">
+                <section id="rood"></section>
+                <section id="groen"></section>
+                <section id="geel"></section>
+                <section id="blauw"></section>
+                <section id="paars"></section>
+            </div>
+            
+            <div id="volgende"><i class="fas fa-arrow-circle-right"></i></div>
+
+
+
+            <div class="landen">
+                <section id="NL">
+                    <p>🇳🇱</p>
+                </section>
+                <section id="TR">
+                    <p>🇹🇷</p>
+                </section>
+                <section id="FR">
+                    <p>🇫🇷</p>
+                </section>
+                <section id="ES">
+                    <p>🇪🇸</p>
+                </section>
+                <section id="GR">
+                    <p>🇬🇷</p>
+                </section>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div>
+
+            <section class="rood">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije rood</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije geel</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+            <section class="paars">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+
+
+
+            <section class="rood">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland rood</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland geel</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+            <section class="paars">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+
+
+
+
+            <section class="rood">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk rood</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk geel</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+            <section class="paars">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <section class="rood">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje rood</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje geel</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+            <section class="paars">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+
+
+
+
+
+            <section class="rood">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland rood</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland groen</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland geel</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland blauw</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland paars</h3>
+                    <img src="http://www.restaurantkapadokya.nl/images/kapadokya-epe.png" alt="test" />
+                    <p>Kapadokya is een mooie plek in de bergen van Centraal Anatolie. Vele oude beschavingen hebben hier geleefd.</p>
+                    <button>Bekijk</button>
+                </span>
+            </section>
+
+
+
+
+        </div>
+
+
+    </main>
+
+    <script src="scripts/script.js"></script>
+
 </body>
-	
+
 </html>
