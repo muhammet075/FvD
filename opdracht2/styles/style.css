@@ -35,8 +35,8 @@ body {
     --kleur1: #7158e2;
     --kleur2: red;
 
-    --achtergrond1: #ffff;
-    --achtergrond2: #eaeaea;
+    --achtergrond1: #3d3d3d;
+    --achtergrond2: #4b4b4b;
 
     --rood: red;
     --groen: green;
@@ -44,6 +44,13 @@ body {
     --blauw: blue;
     --roze: pink;
     --paars: purple;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --achtergrond1: #ffff;
+        --achtergrond2: #eaeaea;
+    }
 }
 
 
@@ -206,12 +213,21 @@ main div:first-child {
 }
 
 main div:first-child section {
-    background-color: var(--lichtgrijs);
     border: 1px solid var(--achtergrond2);
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    /*height: 320px;*/
+    width: auto;
 }
 
 main div:first-child section h3 {
-    padding: 7px 10px;
+    padding: 3px 14px;
+    position: absolute;
+    font-size: 0.7em;
+    top: 0px;
+    background-color: var(--wit);
+    border-bottom-right-radius: 10px;
 }
 
 main div:first-child section img {
@@ -225,9 +241,15 @@ main div:first-child section p {
 
 main div:first-child section button {
     background-color: var(--kleur1);
+    color: var(--wit);
+    letter-spacing: 2px;
     border: none;
     padding: 10px 30px;
-    margin: 20px 10px;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 main div:first-child section:empty {
@@ -242,13 +264,22 @@ main div:first-child section:empty {
 
     header section:last-child nav ul li {
         margin: 20px 0;
-    }
-    
+    }    
+}
+
+
+@media only screen and (max-width: 900px) {
     main div:first-child {
         grid-template-columns: auto auto;
+    }
 }
-    
-    
+
+
+
+@media only screen and (max-width: 600px) {
+    main div:first-child {
+        grid-template-columns: auto;
+    }
 }
 
 
