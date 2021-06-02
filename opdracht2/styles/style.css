@@ -250,6 +250,32 @@ main div:first-child section:empty {
     display: none;
 }
 
+.opgeslagenlijst{
+    background-color: aliceblue;
+    height: 200px;
+    width: 200px;
+}
+
+.favorietknop{
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    font-size: 1.15em;
+    cursor: pointer;
+    color: #000;
+}
+
+.leegfoto{
+    display: none;
+    width: 200px;
+    height: auto;
+}
+
+.opgeslagenlijst img{
+    width: 200px;
+    height: auto;
+}
+
 
 @media only screen and (max-width: 600px) {
     header section:last-child nav ul {
