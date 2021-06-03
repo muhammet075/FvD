@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="author" content="jouw naam" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,692 +12,548 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
     <!-- GOOGLE FONT -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kanit|Teko"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Teko" />
 
     <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/e367b28ca4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/e367b28ca4.js" crossorigin="anonymous"></script>
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <section>
-        <h1>NaturePics</h1>
-      </section>
+        <section>
+            <h1>NaturePics</h1>
+        </section>
+        
+        <section>
+                <span class="lijstknop"><span class="aantalfavorieten">0</span> <i class="fas fa-star"></i> Favorieten</span>
+        </section>
     </header>
-    
-    <div class="opgeslagenlijst">
+
+    <div class="opgeslagenitems">
+        <span class="lijstsluit"><i class="far fa-times-circle"></i> sluiten</span>
+
+        <section class="opgeslagenlijst">
+            <p>Je hebt nog geen favoriete fotos.</p>
+        </section>
     </div>
 
+
     <nav>
-      <h2>Filter</h2>
+        <h2>Filter</h2>
 
-      <div>
-        <div class="kleuren">
-          <section id="rood"></section>
-          <section id="groen"></section>
-          <section id="geel"></section>
-          <section id="blauw"></section>
-          <section id="paars"></section>
+        <div>
+            <div class="kleuren">
+                <section id="rood"></section>
+                <section id="groen"></section>
+                <section id="geel"></section>
+                <section id="blauw"></section>
+                <section id="paars"></section>
+            </div>
+
+            <div id="volgende"><i class="fas fa-arrow-circle-right"></i></div>
+
+            <div class="landen">
+                <div>
+                    <section id="NL">
+                        <p>🇳🇱</p>
+                    </section>
+                    <section id="TR">
+                        <p>🇹🇷</p>
+                    </section>
+                    <section id="FR">
+                        <p>🇫🇷</p>
+                    </section>
+                    <section id="ES">
+                        <p>🇪🇸</p>
+                    </section>
+                    <section id="GR">
+                        <p>🇬🇷</p>
+                    </section>
+                </div>
+            </div>
+
+            <div id="opnieuw"><i class="fas fa-redo"></i></div>
         </div>
-
-        <div id="volgende"><i class="fas fa-arrow-circle-right"></i></div>
-
-        <div class="landen">
-          <div>
-            <section id="NL">
-              <p>🇳🇱</p>
-            </section>
-            <section id="TR">
-              <p>🇹🇷</p>
-            </section>
-            <section id="FR">
-              <p>🇫🇷</p>
-            </section>
-            <section id="ES">
-              <p>🇪🇸</p>
-            </section>
-            <section id="GR">
-              <p>🇬🇷</p>
-            </section>
-          </div>
-        </div>
-
-        <div id="opnieuw"><i class="fas fa-redo"></i></div>
-      </div>
     </nav>
 
     <main>
-      <div class="fotolijst">
-        <section class="geel">
-          <span class="turkije">
-            <h3>🇹🇷 turkije geel</h3>
-            <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/geel/geel3.jpeg"
-              alt="Malleseum van Ataturk"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland paars</h3>
-            <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/paars/paars2.jpeg"
-              alt="Paarse sfeer in Griekenland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="turkije">
-            <h3>🇹🇷 turkije rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/rood/rood2.jpeg"
-              alt="Zonsondergang in Istanbul"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland groen</h3>
+        <div class="fotolijst">
+            <section class="geel">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije geel</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/groen/groen3.jpeg"
-              alt="Groene Zaanse huisjes"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="./images/fotos/TR/geel/geel3.jpeg" alt="Malleseum van Ataturk" />
 
-        <section class="paars">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland paars</h3>
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland paars</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/paars/paars1.jpeg"
-              alt="Zonsopgang in Kos"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="images/fotos/GR/paars/paars2.jpeg" alt="Paarse sfeer in Griekenland" />
 
-        <section class="geel">
-          <span class="turkije">
-            <h3>🇹🇷 turkije geel</h3>
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije rood</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/geel/geel1.jpeg"
-              alt="De toren van Istanbul"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="./images/fotos/TR/rood/rood2.jpeg" alt="Zonsondergang in Istanbul" />
 
-        <section class="groen">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje groen</h3>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland groen</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/groen/groen2.jpeg"
-              alt="Spaanse bergen landschap"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="images/fotos/NL/groen/groen3.jpeg" alt="Groene Zaanse huisjes" />
 
-        <section class="groen">
-          <span class="turkije">
-            <h3>🇹🇷 turkije groen</h3>
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland paars</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/groen/groen1.jpeg"
-              alt="De bergen van Trabzon"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="images/fotos/GR/paars/paars1.jpeg" alt="Zonsopgang in Kos" />
 
-        <section class="blauw">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland blauw</h3>
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije geel</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/blauw/blauw2.jpeg"
-              alt="De Griekse vlag achter een dorp"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="./images/fotos/TR/geel/geel1.jpeg" alt="De toren van Istanbul" />
 
-        <section class="rood">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland rood</h3>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje groen</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/rood/rood2.jpeg"
-              alt="Rode tulpen in een weiland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="images/fotos/ES/groen/groen2.jpeg" alt="Spaanse bergen landschap" />
 
-        <section class="groen">
-          <span class="turkije">
-            <h3>🇹🇷 turkije groen</h3>
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije groen</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/groen/groen2.jpeg"
-              alt="Uzungol in Trabzon"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="./images/fotos/TR/groen/groen1.jpeg" alt="De bergen van Trabzon" />
 
-        <section class="blauw">
-          <span class="turkije">
-            <h3>🇹🇷 turkije blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/blauw/blauw1.jpeg"
-              alt="Uzungol in Trabzon"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                </span>
+            </section>
 
-        <section class="paars">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/paars/paars1.jpeg"
-              alt="Amsterdamse Grachten"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk groen</h3>
-                                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/groen/groen2.jpeg"
-              alt="Een groene landschap in Frankrijk"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland rood</h3>
-              <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/rood/rood1.jpeg"
-              alt="Rode tulpen in een weiland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland groen</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/groen/groen2.jpeg"
-              alt="Zaanse windmolen"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/geel/geel1.jpeg"
-              alt="Eifeltoren bij zonsondergang"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/geel/geel1.jpeg"
-              alt="Gele tulpen in een weiland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/geel/geel2.png"
-              alt="Kaasmarkt in Alkmaar"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="turkije">
-            <h3>🇹🇷 turkije paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/paars/paars2.jpeg"
-              alt="Skyline van Ankara"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/blauw/blauw1.jpeg"
-              alt="Amsterdamse Grachtenhuizen"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img src="images/fotos/ES/paars/paars1.jpeg" alt="Spaanse paleis" />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img src="images/fotos/NL/paars/paars2.jpeg" alt="Paarse tulpen" />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland groen</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/groen/groen1.jpeg"
-              alt="Bergen in Athene"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="turkije">
-            <h3>🇹🇷 turkije blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/blauw/blauw2.jpeg"
-              alt="Uzungol in Trabzon"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje groen</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/groen/groen1.jpeg"
-              alt="Een stier in de Spaanse bergen"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/blauw/blauw1.jpeg"
-              alt="De Eifeltoren achter de blauwe lucht"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/blauw/blauw2.jpeg"
-              alt="Standbeeld in Lyon"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="turkije">
-            <h3>🇹🇷 turkije rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/rood/rood1.jpeg"
-              alt="2 Trams in Istanbul"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/geel/geel2.png"
-              alt="Droge landschap met graan"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/geel/geel1.jpeg"
-              alt="De Griekse tempel van Zeus"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk groen</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/groen/groen1.jpeg"
-              alt="Een dorp in Frankrijk"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/paars/paars1.jpeg"
-              alt="Paarse struiken bij zonsondergang"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/rood/rood1.jpeg"
-              alt="Zonsondergang aan de kust"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/blauw/blauw2.jpeg"
-              alt="De Zaanse Schans"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/rood/rood2.jpeg"
-              alt="Zonsondergang bij een weiland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/blauw/blauw1.jpeg"
-              alt="Kust in Barcelona"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/blauw/blauw2.jpeg"
-              alt="Skyline van Barcelona"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="turkije">
-            <h3>🇹🇷 turkije paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/paars/paars1.jpeg"
-              alt="De brug in Istanbul"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/rood/rood2.jpeg"
-              alt="Strand aan een rots"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/geel/geel1.png"
-              alt="Droge landschap in Spanje"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/geel/geel2.jpeg"
-              alt="Zonsopgang in Santorini"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="frankrijk">
-            <h3>🇫🇷 Frankrijk paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/FR/paars/paars2.png"
-              alt="Paarse struiken bij een helder blauw lucht"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/geel/geel2.png"
-              alt="Spaanse Zonnenbloem"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="paars">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje paars</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/paars/paars2.jpeg"
-              alt="Kathedraal van Barcelona"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/rood/rood1.png"
-              alt="Rode rozen in een weiland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland groen</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/groen/groen2.jpeg"
-              alt="Kerk in Thessaloniki"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="blauw">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland blauw</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/blauw/blauw1.jpeg"
-              alt="Landschap in Santorini"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="geel">
-          <span class="turkije">
-            <h3>🇹🇷 turkije geel</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="./images/fotos/TR/geel/geel2.jpeg"
-              alt="De Turkse vlag achter een moskee"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="rood">
-          <span class="spanje">
-            <h3>🇪🇸 Spanje rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/ES/rood/rood2.jpeg"
-              alt="Zonsondergang aan de kust"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-
-        <section class="groen">
-          <span class="nederland">
-            <h3>🇳🇱 Nederland groen</h3>
+            <section class="blauw">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland blauw</h3>
                     <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/NL/groen/groen1.jpeg"
-              alt="Groene Zaanse huisjes"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
+                    <img src="images/fotos/GR/blauw/blauw2.jpeg" alt="De Griekse vlag achter een dorp" />
 
-        <section class="rood">
-          <span class="griekenland">
-            <h3>🇬🇷 Griekenland rood</h3>
-                        <span class="favorietknop klik"><i class="far fa-star"></i></span>
-            <img
-              src="images/fotos/GR/rood/rood1.jpeg"
-              alt="Zonsondergang in Griekenland"
-            />
-            <button>Bekijk</button>
-          </span>
-        </section>
-      </div>
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/rood/rood2.jpeg" alt="Rode tulpen in een weiland" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/groen/groen2.jpeg" alt="Uzungol in Trabzon" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/blauw/blauw1.jpeg" alt="Uzungol in Trabzon" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/paars/paars1.jpeg" alt="Amsterdamse Grachten" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/groen/groen2.jpeg" alt="Een groene landschap in Frankrijk" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/rood/rood1.jpeg" alt="Rode tulpen in een weiland" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/groen/groen2.jpeg" alt="Zaanse windmolen" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/geel/geel1.jpeg" alt="Eifeltoren bij zonsondergang" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/geel/geel1.jpeg" alt="Gele tulpen in een weiland" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/geel/geel2.png" alt="Kaasmarkt in Alkmaar" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/paars/paars2.jpeg" alt="Skyline van Ankara" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/blauw/blauw1.jpeg" alt="Amsterdamse Grachtenhuizen" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/paars/paars1.jpeg" alt="Spaanse paleis" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/paars/paars2.jpeg" alt="Paarse tulpen" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/groen/groen1.jpeg" alt="Bergen in Athene" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/blauw/blauw2.jpeg" alt="Uzungol in Trabzon" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/groen/groen1.jpeg" alt="Een stier in de Spaanse bergen" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/blauw/blauw1.jpeg" alt="De Eifeltoren achter de blauwe lucht" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/blauw/blauw2.jpeg" alt="Standbeeld in Lyon" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/rood/rood1.jpeg" alt="2 Trams in Istanbul" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/geel/geel2.png" alt="Droge landschap met graan" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/geel/geel1.jpeg" alt="De Griekse tempel van Zeus" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/groen/groen1.jpeg" alt="Een dorp in Frankrijk" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/paars/paars1.jpeg" alt="Paarse struiken bij zonsondergang" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/rood/rood1.jpeg" alt="Zonsondergang aan de kust" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/blauw/blauw2.jpeg" alt="De Zaanse Schans" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/rood/rood2.jpeg" alt="Zonsondergang bij een weiland" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/blauw/blauw1.jpeg" alt="Kust in Barcelona" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/blauw/blauw2.jpeg" alt="Skyline van Barcelona" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/paars/paars1.jpeg" alt="De brug in Istanbul" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/rood/rood2.jpeg" alt="Strand aan een rots" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/geel/geel1.png" alt="Droge landschap in Spanje" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/geel/geel2.jpeg" alt="Zonsopgang in Santorini" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="frankrijk">
+                    <h3>🇫🇷 Frankrijk paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/FR/paars/paars2.png" alt="Paarse struiken bij een helder blauw lucht" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/geel/geel2.png" alt="Spaanse Zonnenbloem" />
+
+                </span>
+            </section>
+
+            <section class="paars">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje paars</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/paars/paars2.jpeg" alt="Kathedraal van Barcelona" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/rood/rood1.png" alt="Rode rozen in een weiland" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/groen/groen2.jpeg" alt="Kerk in Thessaloniki" />
+
+                </span>
+            </section>
+
+            <section class="blauw">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland blauw</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/blauw/blauw1.jpeg" alt="Landschap in Santorini" />
+
+                </span>
+            </section>
+
+            <section class="geel">
+                <span class="turkije">
+                    <h3>🇹🇷 turkije geel</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="./images/fotos/TR/geel/geel2.jpeg" alt="De Turkse vlag achter een moskee" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="spanje">
+                    <h3>🇪🇸 Spanje rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/ES/rood/rood2.jpeg" alt="Zonsondergang aan de kust" />
+
+                </span>
+            </section>
+
+            <section class="groen">
+                <span class="nederland">
+                    <h3>🇳🇱 Nederland groen</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/NL/groen/groen1.jpeg" alt="Groene Zaanse huisjes" />
+
+                </span>
+            </section>
+
+            <section class="rood">
+                <span class="griekenland">
+                    <h3>🇬🇷 Griekenland rood</h3>
+                    <span class="favorietknop klik"><i class="far fa-star"></i></span>
+                    <img src="images/fotos/GR/rood/rood1.jpeg" alt="Zonsondergang in Griekenland" />
+
+                </span>
+            </section>
+        </div>
     </main>
 
     <script src="scripts/script.js"></script>
-  </body>
+    <script src="scripts/opslaan.js"></script>
+</body>
+
 </html>

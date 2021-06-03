@@ -56,12 +56,117 @@ body {
 
 header section {
     background-color: var(--kleur1);
+    position: relative;
     max-width: 350px;
     text-align: center;
     padding: 20px 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+header section:last-child {
+    background: none;
+}
+
+.lijstknop {
+    position: relative;
+    color: var(--geel);
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.aantalfavorieten{
+font-size: 0.7em;
+    position: absolute;
+    color: var(--zwart);
+    right: -15px;
+    top: -13px;
+    padding: 0px 4px;
+    border-radius: 15px;
+    background-color: var(--wit);
+}
+
+.lijstsluit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--rood);
+    cursor: pointer;
+}
+
+.opgeslagenlijst {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1400px;
+}
+
+.opgeslagenlijst p:only-child {
+    color: red;
+}
+
+.opgeslagenlijst p:not(:only-child) {
+    display: none;
+
+}
+
+
+.opgeslagenitems {
+    display: none;
+    position: fixed;
+    background-color: aliceblue;
+    right: -2000px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.opgeslagenitems img {
+    width: 130px;
+}
+
+
+.menuanimatie {
+    animation-name: menu-openen;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.menuanimatie-sluit {
+    animation-name: menu-sluiten;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+.favorietknop {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    font-size: 1.15em;
+    cursor: pointer;
+    color: #000;
+}
+
+.leegfoto {
+    display: none;
+    width: 200px;
+    height: auto;
+}
+
+.opgeslagenlijst img {
+    width: 200px;
+    height: auto;
+}
+
+
 
 nav {
     width: 100%;
@@ -79,8 +184,6 @@ nav div {
 
 
 
-
-
 /* kleuren */
 
 .kleuren {
@@ -94,7 +197,7 @@ nav div {
     width: 200px;
 }
 
-.filteranimatie{
+.filteranimatie {
     animation-name: filter-opzij;
     animation-duration: 1.3s;
     animation-timing-function: linear;
@@ -137,7 +240,7 @@ nav div {
     margin-top: 10px;
 }
 
-#opnieuw{
+#opnieuw {
     display: none;
 }
 
@@ -172,7 +275,7 @@ nav div {
 
 @keyframes filter-opzij {
 
-    
+
     25% {
         left: 500px
     }
@@ -180,7 +283,7 @@ nav div {
     50% {
         left: 1200px
     }
-    
+
     75% {
         left: 1600px
     }
@@ -189,6 +292,44 @@ nav div {
     100% {
         left: 2500px
     }
+
+}
+
+
+@keyframes menu-openen {
+
+    0% {
+        right: -2000px;
+    }
+
+
+    50% {
+        right: -1000px;
+    }
+
+
+    100% {
+        right: 0px;
+    }
+
+}
+
+
+@keyframes menu-sluiten {
+
+    0% {
+        right: 0px;
+    }
+
+    50% {
+        right: -1000px;
+    }
+
+    100% {
+        right: -2000px;
+    }
+
+}
 
 }
 
@@ -203,11 +344,11 @@ main {
 main div:first-child {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-gap: 40px;
+    grid-gap: 20px;
+    max-width: 1200px;
 }
 
 main div:first-child section {
-    border: 1px solid var(--achtergrond2);
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -233,59 +374,10 @@ main div:first-child section p {
     padding: 7px 10px 0px 10px;
 }
 
-main div:first-child section button {
-    background-color: var(--kleur1);
-    color: var(--wit);
-    letter-spacing: 2px;
-    border: none;
-    padding: 10px 30px;
-    width: 100%;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-}
-
 main div:first-child section:empty {
     display: none;
 }
 
-.opgeslagenlijst{
-    background-color: aliceblue;
-    height: 200px;
-    width: 200px;
-}
-
-.favorietknop{
-    position: absolute;
-    right: 5px;
-    top: 1px;
-    font-size: 1.15em;
-    cursor: pointer;
-    color: #000;
-}
-
-.leegfoto{
-    display: none;
-    width: 200px;
-    height: auto;
-}
-
-.opgeslagenlijst img{
-    width: 200px;
-    height: auto;
-}
-
-
-@media only screen and (max-width: 600px) {
-    header section:last-child nav ul {
-        flex-direction: column;
-    }
-
-    header section:last-child nav ul li {
-        margin: 20px 0;
-    }    
-}
 
 
 @media only screen and (max-width: 900px) {
