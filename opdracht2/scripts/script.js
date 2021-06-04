@@ -608,6 +608,7 @@ function opnieuwFunctie() {
     kleuren.classList.remove("filteranimatie");
     landen.classList.remove("filteranimatie");
     landen.style.display = "none";
+    opnieuwKnop.style.display = "none";
 
     nederland.forEach(function (element) {
         element.style.display = "block";
