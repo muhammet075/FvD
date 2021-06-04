@@ -75,8 +75,8 @@ header section:last-child {
     font-size: 1.2em;
 }
 
-.aantalfavorieten{
-font-size: 0.7em;
+.aantalfavorieten {
+    font-size: 0.7em;
     position: absolute;
     color: var(--zwart);
     right: -15px;
@@ -344,6 +344,7 @@ main {
 main div:first-child {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    align-items: center;
     grid-gap: 20px;
     max-width: 1200px;
 }
@@ -368,6 +369,7 @@ main div:first-child section h3 {
 main div:first-child section img {
     width: 100%;
     height: auto;
+    border-radius: 17px;
 }
 
 main div:first-child section p {
