@@ -64,6 +64,11 @@ header section {
     border-bottom-right-radius: 15px;
 }
 
+header section a{
+    text-decoration: none;
+    color: var(--wit);
+}
+
 header section:last-child {
     background: none;
 }
@@ -73,6 +78,7 @@ header section:last-child {
     color: var(--geel);
     cursor: pointer;
     font-size: 1.2em;
+    text-decoration: underline;
 }
 
 .aantalfavorieten {
@@ -88,9 +94,10 @@ header section:last-child {
 
 .lijstsluit {
     position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--rood);
+    right: 10px;
+    top: 5px;
+    font-size: 2em;
+    color: var(--kleur1);
     cursor: pointer;
 }
 
@@ -102,10 +109,18 @@ header section:last-child {
     align-items: center;
     margin-top: 50px;
     max-width: 1400px;
+    padding: 10px;
 }
 
 .opgeslagenlijst p:only-child {
-    color: red;
+    color: var(--rood);
+    position: absolute;
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    top: 100px;
+text-align: center;
 }
 
 .opgeslagenlijst p:not(:only-child) {
@@ -178,7 +193,9 @@ nav {
 }
 
 nav div {
-    max-width: 750px;
+    position: relative;
+    max-width: 300px;
+    height: auto;
     text-align: center;
 }
 
@@ -195,6 +212,7 @@ nav div {
     text-align: center;
     display: inline-flex;
     width: 200px;
+    cursor: pointer;
 }
 
 .filteranimatie {
@@ -236,14 +254,28 @@ nav div {
 #volgende {
     display: none;
     position: absolute;
-    right: 40%;
-    margin-top: 10px;
+    right: 0;
+    top: 5px;
+    font-size: 1.5em;
+    color: var(--geel);
 }
 
 #opnieuw {
     display: none;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: var(--geel);
+    cursor: pointer;
 }
 
+#opnieuw:hover {
+    -webkit-transform: rotate(360deg);
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: now;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+/* BRON https://stackoverflow.com/questions/6410730/css-endless-rotation-animation */
 
 /* landen */
 .landen {
@@ -261,11 +293,12 @@ nav div {
     border-radius: 10px;
     background-color: var(--wit);
     width: 400px;
+    margin-top: 10px;
 }
 
 
 .landen div section {
-    padding: 0 20px;
+    padding: 0 15px;
     margin: auto;
     cursor: pointer;
 }
@@ -338,7 +371,6 @@ nav div {
 
 main {
     max-width: 1200px;
-    padding: 20px;
 }
 
 main div:first-child {
@@ -347,6 +379,7 @@ main div:first-child {
     align-items: center;
     grid-gap: 20px;
     max-width: 1200px;
+    padding: 10px;
 }
 
 main div:first-child section {
@@ -382,17 +415,26 @@ main div:first-child section:empty {
 
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
     main div:first-child {
+        grid-template-columns: auto auto auto;
+    }
+   
+    .opgeslagenlijst{
         grid-template-columns: auto auto;
     }
 }
 
 
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 650px) {
     main div:first-child {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+    }
+   
+    .opgeslagenlijst{
+            grid-template-columns: auto;
     }
 }
 
