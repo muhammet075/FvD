@@ -9,6 +9,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 
 ### Opdracht 1
+
 1. https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp - CSS Keyframes
 2. https://www.w3schools.com/css/css3_animations.asp - CSS Animaties
 3. https://css-tricks.com/almanac/properties/a/animation/ - CSS Animaties
@@ -19,14 +20,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 8. https://www.calligraphr.com/en/ - Eigen font maken
 
 ### Opdracht 2
+
 1. https://forum.freecodecamp.org/t/queryselectorall-for-multiple-classes-not-working/254980 - QuerySelector alle classes
 2. https://www.w3schools.com/jsref/prop_node_parentelement.asp - Parent element
 3. https://stackoverflow.com/questions/6999257/vertical-scrollbar-position-absolute/34503125 - Verticaal scrollen
 4. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows - Verticaal grid
 5. https://www.w3schools.com/js/js_htmldom_nodes.asp - JavaScript nieuwe HTML element toevoegen
+6. https://fontawesome.com/
+7. https://fonts.google.com/specimen/Kanit
 
-
-## Opdracht 1 
+## Opdracht 1
 
 ## 21 April - Voortgangsgesprek
 
@@ -64,13 +67,19 @@ Als animaties heb ik de filters geanimeerd dat het naar rechts gaat als de keuze
 
 ## Werkwijze
 
-Ik begon eerst met de HTML en CSS. Ik heb de site vormgegeven en ik heb gebruik gemaakt dat als een gebruiker met een donkere scherm op de site komt dat het een donkere weergave krijgt, en met een lichte scherm meer wittere kleuren krijgt. Vervolgens heb ik met media queries de website repsonive gemaakt van mobiele schermen tot en met 4k schermen. Daarna ben ik met JavaScript begonnen.
+Ik begon eerst met de HTML en CSS. Ik heb de site vormgegeven en ik heb gebruik gemaakt dat als een gebruiker met een donkere scherm op de site komt dat het een donkere weergave krijgt, en met een lichte scherm meer wittere kleuren krijgt. Vervolgens heb ik met media queries de website repsonive gemaakt van mobiele schermen tot en met 4k schermen. Daarna ben ik met JavaScript begonnen. Ik heb ook font awesome gebruikt voor de icoontjes en ik heb de Google Font Kanit gebruikt.
 
 ## JavaScript
 
 Met JavaScript heb ik ervoor gezorgd dat als er op kleur gesorteerdt wordt, dat alle andere kleuren waar de gebruiker niet op geklikt heeft een display none krijgen. Het wordt getoggled. Daarna komt de landen filter optie in beeld en dan krijgen de spans in de divs van de kleuren een display none of block, dus daar wordt het ook getoggled. Daarna komt er een reset knop in beeld en als daar op geklikt wordt dan krijgt alles een display block.
 
 Als een gebruiker een foto als favoriet wilt maken, dan klikt de gebruiker op het sterretje. De sterretje maakt een nieuw html img element aan, en de src wordt de link van de afbeelding waar de gebruiker op geklikt heeft. De sterretje wordt dan geel van kleur en als de gebruikter weer op de sterretje klikt dan wordt de foto getoggled en verdwijnt uit de favorieten lijst. De favorieten lijst heeft ook een zero state dus als het leeg is.
+
+<img src="https://i.ibb.co/7jvhWDV/Schermafbeelding-2021-06-08-om-15-27-22.png" alt="Filteren">
+Hierboven een screenshot van de kleur filter voor geel.
+
+<img src="https://i.ibb.co/55TKSKG/Schermafbeelding-2021-06-08-om-15-27-35.png" alt="Favoriet">
+Hierboven een screenshot om een favoriet aan te maken.
 
 ### EXTRA BRONNEN AFBEELDINGEN OPDRACHT 2
 
