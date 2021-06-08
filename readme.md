@@ -77,7 +77,7 @@ Als een gebruiker een foto als favoriet wilt maken, dan klikt de gebruiker op he
 
 <img src="https://i.ibb.co/7jvhWDV/Schermafbeelding-2021-06-08-om-15-27-22.png" alt="Filteren">
 Hierboven een screenshot van de kleur filter voor geel.
-
+<br/><br/>
 <img src="https://i.ibb.co/55TKSKG/Schermafbeelding-2021-06-08-om-15-27-35.png" alt="Favoriet">
 Hierboven een screenshot om een favoriet aan te maken.
 
