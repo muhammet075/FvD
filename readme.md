@@ -8,6 +8,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 
+### Opdracht 1
 1. https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp - CSS Keyframes
 2. https://www.w3schools.com/css/css3_animations.asp - CSS Animaties
 3. https://css-tricks.com/almanac/properties/a/animation/ - CSS Animaties
@@ -16,6 +17,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 6. https://applecolors.com/palette/10780-oreo-logo - Oreo kleur pallet
 7. https://worldvectorlogo.com/nl/logo/ulker-1 - Ulker SVG logo
 8. https://www.calligraphr.com/en/ - Eigen font maken
+
+### Opdracht 2
+1. https://forum.freecodecamp.org/t/queryselectorall-for-multiple-classes-not-working/254980 - QuerySelector alle classes
+2. https://www.w3schools.com/jsref/prop_node_parentelement.asp - Parent element
+3. https://stackoverflow.com/questions/6999257/vertical-scrollbar-position-absolute/34503125 - Verticaal scrollen
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows - Verticaal grid
+5. https://www.w3schools.com/js/js_htmldom_nodes.asp - JavaScript nieuwe HTML element toevoegen
+
+
+## Opdracht 1 
 
 ## 21 April - Voortgangsgesprek
 
@@ -43,9 +54,25 @@ Na dat mijn animaties klaar waren, heb ik de body een display flex gegeven en ee
 
 <br/>
 
-## BRONNEN AFBEELDINGEN OPDRACHT 2
+## Opdracht 2
 
-Bronnen:
+## Voortgang
+
+Ik heb de case fotogallerij gekozen, ik heb ervoor gekozen om fotos van landen te laten zien op de website en dat gebruikers de afbeeldingen kunnen opslaan als favoriet, filteren op kleur, sorteren op land. Als er op een toets op de toetsenbord geklikt wordt, wordt de grid veranderd in een horizontale grid.
+
+Als animaties heb ik de filters geanimeerd dat het naar rechts gaat als de keuze gemaakt is, de opgeslagen menu komt met een effect naar links in scherm. De afbeeldingen die ik bij dit project gebruikt heb, heb ik op Google gevonden en de bronnen staan onderaan in dit readme file.
+
+## Werkwijze
+
+Ik begon eerst met de HTML en CSS. Ik heb de site vormgegeven en ik heb gebruik gemaakt dat als een gebruiker met een donkere scherm op de site komt dat het een donkere weergave krijgt, en met een lichte scherm meer wittere kleuren krijgt. Vervolgens heb ik met media queries de website repsonive gemaakt van mobiele schermen tot en met 4k schermen. Daarna ben ik met JavaScript begonnen.
+
+## JavaScript
+
+Met JavaScript heb ik ervoor gezorgd dat als er op kleur gesorteerdt wordt, dat alle andere kleuren waar de gebruiker niet op geklikt heeft een display none krijgen. Het wordt getoggled. Daarna komt de landen filter optie in beeld en dan krijgen de spans in de divs van de kleuren een display none of block, dus daar wordt het ook getoggled. Daarna komt er een reset knop in beeld en als daar op geklikt wordt dan krijgt alles een display block.
+
+Als een gebruiker een foto als favoriet wilt maken, dan klikt de gebruiker op het sterretje. De sterretje maakt een nieuw html img element aan, en de src wordt de link van de afbeelding waar de gebruiker op geklikt heeft. De sterretje wordt dan geel van kleur en als de gebruikter weer op de sterretje klikt dan wordt de foto getoggled en verdwijnt uit de favorieten lijst. De favorieten lijst heeft ook een zero state dus als het leeg is.
+
+### EXTRA BRONNEN AFBEELDINGEN OPDRACHT 2
 
 NL {
 Rood:

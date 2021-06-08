@@ -1,8 +1,10 @@
 // JavaScript Document
 console.log("howdy");
 
+//variabelen maken
 var favorietKnop = document.querySelectorAll(".favorietknop");
 
+//kleuren
 var rood = document.querySelectorAll(".rood");
 var groen = document.querySelectorAll(".groen");
 var geel = document.querySelectorAll(".geel");
@@ -11,12 +13,14 @@ var paars = document.querySelectorAll(".paars");
 var bruin = document.querySelectorAll(".bruin");
 var oranje = document.querySelectorAll(".oranje");
 
+//landen
 var nederland = document.querySelectorAll(".nederland");
 var turkije = document.querySelectorAll(".turkije");
 var frankrijk = document.querySelectorAll(".frankrijk");
 var spanje = document.querySelectorAll(".spanje");
 var griekenland = document.querySelectorAll(".griekenland");
 
+//keuze kleuren
 var keuzeRood = document.querySelector("#rood");
 var keuzeGroen = document.querySelector("#groen");
 var keuzeGeel = document.querySelector("#geel");
@@ -25,27 +29,42 @@ var keuzePaars = document.querySelector("#paars");
 var keuzeBruin = document.querySelector("#bruin");
 var keuzeOranje = document.querySelector("#oranje");
 
+//keuze landen
 var keuzeNederland = document.querySelector("#NL");
 var keuzeTurkije = document.querySelector("#TR");
 var keuzeFrankrijk = document.querySelector("#FR");
 var keuzeSpanje = document.querySelector("#ES");
 var keuzeGriekenland = document.querySelector("#GR");
 
+//knoppen
 var volgendeKnop = document.querySelector("#volgende");
 var opnieuwKnop = document.querySelector("#opnieuw");
 var kleuren = document.querySelector(".kleuren");
 var landen = document.querySelector(".landen");
 
 
+//lijsten en knoppen
 var opgeslagenLijst = document.querySelector(".opgeslagenlijst");
 var lijstKnop = document.querySelector(".lijstknop");
 var lijstKnopSluit = document.querySelector(".lijstsluit");
 var favorietLijst = document.querySelector(".opgeslagenitems");
 
-
-
 var favorietTeller = document.querySelector(".aantalfavorieten");
 
+
+
+
+document.addEventListener('keyup', logKey);
+
+//als er op een knop geklikt wordt de fotolijst getoggled met de class een keyanimatie
+function logKey() {
+    console.log("op knop geklikt");
+    document.querySelector(".fotolijst").classList.toggle("keyAnimatie");
+}
+
+
+
+//als er ergens op het scherm geklikt wordt wordt de functie toonAantal uitgevoerd
 document.addEventListener("click", toonAantal)
 
 function toonAantal() {
@@ -70,18 +89,11 @@ function toonAantal() {
 };
 
 
-
-
-
-
-
-
-
-
-
+//als er geklikt wordt op de lijst knop dan wordt de functie toonfavorietmenu uitgevoerd
 lijstKnop.addEventListener("click", toonFavorietMenu);
 
 function toonFavorietMenu() {
+    //de favorietenlijst krijgt display block en de animaties worden getoggled
     favorietLijst.style.display = "block";
     favorietLijst.classList.remove("menuanimatie-sluit");
     favorietLijst.classList.add("menuanimatie");
@@ -90,29 +102,19 @@ function toonFavorietMenu() {
 
 lijstKnopSluit.addEventListener("click", sluitFavorietMenu);
 
-
 function sluitFavorietMenu() {
     favorietLijst.classList.remove("menuanimatie");
     favorietLijst.classList.add("menuanimatie-sluit");
 
+    //de sluit knop verdwijnt na 1 seconde
     setTimeout(function () {
         favorietLijst.style.display = "none";
     }, 1000);
 
 }
 
-window.addEventListener("click", heLa)
 
-function heLa() {
-    if (opgeslagenLijst.childNodes.length > 0) {
-
-
-    } else {
-        console.log("test")
-    }
-}
-
-
+//favoriet knoppen defineren
 var favorietKnop1 = document.querySelector(
     ".fotolijst section:nth-child(1) .favorietknop"
 );
@@ -269,13 +271,6 @@ var favorietKnop51 = document.querySelector(
 var favorietKnop52 = document.querySelector(
     ".fotolijst section:nth-child(52) .favorietknop"
 );
-
-
-
-
-
-
-
 
 
 
