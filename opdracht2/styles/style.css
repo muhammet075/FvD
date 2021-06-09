@@ -2,453 +2,495 @@
 
 /* ROOT KLEUREN */
 :root {
-    --wit: #ffff;
-    --zwart: #3d3d3d;
-    --lichtgrijs: #f5f5f5;
+  --wit: #ffff;
+  --zwart: #3d3d3d;
+  --lichtgrijs: #f5f5f5;
 
-    --kleur1: #7158e2;
-    --kleur2: red;
+  --kleur1: #7158e2;
+  --kleur2: red;
 
-    --achtergrond1: #3d3d3d;
-    --achtergrond2: #4b4b4b;
+  --achtergrond1: #3d3d3d;
+  --achtergrond2: #4b4b4b;
 
-    --rood: red;
-    --groen: green;
-    --geel: yellow;
-    --blauw: blue;
-    --roze: pink;
-    --paars: purple;
+  --rood: red;
+  --groen: green;
+  --geel: yellow;
+  --blauw: blue;
+  --roze: pink;
+  --paars: purple;
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --achtergrond1: #ffff;
-        --achtergrond2: #eaeaea;
-    }
+  :root {
+    --achtergrond1: #ffff;
+    --achtergrond2: #eaeaea;
+  }
 }
 
 /* FONTS */
 @font-face {
-    font-family: 'eenfont';
-    src: url('../fonts/eenfont.woff2') format('woff2'),
-        url('../fonts/eenfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "eenfont";
+  src: url("../fonts/eenfont.woff2") format("woff2"),
+    url("../fonts/eenfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ALGEMENE STYLING */
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
 }
 
 body {
-    font-family: eenfont, sans-serif;
-    color: #111;
-    background-color: var(--achtergrond1);
-    font-family: 'Kanit', eenfont, sans-serif;
+  font-family: eenfont, sans-serif;
+  color: #111;
+  background-color: var(--achtergrond1);
+  font-family: "Kanit", eenfont, sans-serif;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* HEADER */
 header section {
-    background-color: var(--kleur1);
-    position: relative;
-    max-width: 350px;
-    text-align: center;
-    padding: 20px 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  background-color: var(--kleur1);
+  position: relative;
+  max-width: 350px;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 header section a {
-    text-decoration: none;
-    color: var(--wit);
+  text-decoration: none;
+  color: var(--wit);
 }
 
 header section:last-child {
-    background: none;
+  background: none;
 }
 
 /* NAVIGATIE */
 nav {
-    width: 100%;
-    height: 100px;
-    margin: 30px auto;
-    background-color: var(--kleur1);
-    text-align: center;
-    padding-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  margin: 30px auto;
+  background-color: var(--kleur1);
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 nav div {
-    position: relative;
-    max-width: 300px;
-    height: auto;
-    text-align: center;
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  text-align: center;
 }
 
 nav h2 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
 
 /* LIJST */
 .lijstknop {
-    position: relative;
-    color: var(--geel);
-    cursor: pointer;
-    font-size: 1.2em;
-    text-decoration: underline;
+  position: relative;
+  color: var(--geel);
+  cursor: pointer;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 .aantalfavorieten {
-    font-size: 0.7em;
-    position: absolute;
-    color: var(--zwart);
-    right: -15px;
-    top: -13px;
-    padding: 0px 4px;
-    border-radius: 15px;
-    background-color: var(--wit);
+  font-size: 0.7em;
+  position: absolute;
+  color: var(--zwart);
+  right: -15px;
+  top: -13px;
+  padding: 0px 4px;
+  border-radius: 15px;
+  background-color: var(--wit);
 }
 
 .lijstsluit {
-    position: fixed;
-    right: 10px;
-    top: 5px;
-    font-size: 2em;
-    color: var(--kleur1);
-    cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 5px;
+  font-size: 2em;
+  color: var(--kleur1);
+  cursor: pointer;
 }
-
 
 /* OPGESLAGEN LIJST */
 .opgeslagenlijst {
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 50px;
-    align-items: center;
-    margin-top: 50px;
-    max-width: 1400px;
-    padding: 10px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px;
+  align-items: center;
+  margin-top: 50px;
+  max-width: 1400px;
+  padding: 10px;
 }
 
 .opgeslagenlijst p:only-child {
-    color: var(--rood);
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 100px;
-    text-align: center;
+  color: var(--rood);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  text-align: center;
 }
 
 .opgeslagenlijst p:not(:only-child) {
-    display: none;
-
+  display: none;
 }
 
 .opgeslagenitems {
-    display: none;
-    position: fixed;
-    background-color: aliceblue;
-    right: -2000px;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    z-index: 9999;
-    overflow: auto;
+  display: none;
+  position: fixed;
+  background-color: aliceblue;
+  right: -2000px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  z-index: 9999;
+  overflow: auto;
 }
 
 .opgeslagenitems img {
-    width: 130px;
+  width: 130px;
 }
 
 /* MENU ANIMATIE */
 .menuanimatie {
-    animation-name: menu-openen;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+  animation-name: menu-openen;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .menuanimatie-sluit {
-    animation-name: menu-sluiten;
-    animation-duration: 0.8s;
-    animation-timing-function: linear;
-    animation-fill-mode: backwards;
+  animation-name: menu-sluiten;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
 }
 
 /* AFBEELDINGEN STYLINGEN */
 .favorietknop {
-    position: absolute;
-    right: 5px;
-    top: 1px;
-    font-size: 1.15em;
-    cursor: pointer;
-    color: #000;
+  position: absolute;
+  right: 5px;
+  top: 1px;
+  font-size: 1.15em;
+  cursor: pointer;
+  color: #000;
 }
 
 .leegfoto {
-    display: none;
-    width: 200px;
-    height: auto;
+  display: none;
+  width: 200px;
+  height: auto;
 }
 
 .opgeslagenlijst img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
-
-
 
 /* KLEUREN FILTER */
 .kleuren {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: inline-flex;
-    width: 200px;
-    cursor: pointer;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: inline-flex;
+  width: 200px;
+  cursor: pointer;
+}
+
+.kleuren label {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: blue;
+  overflow: hidden;
+  display: inline-block;
+  padding-left: 2em;
+}
+
+.kleuren label[for="rood"] {
+  background-color: red;
+}
+
+.kleuren label[for="groen"] {
+  background-color: green;
+}
+
+.kleuren label[for="geel"] {
+  background-color: yellow;
+}
+.kleuren label[for="blauw"] {
+  background-color: blue;
+}
+.kleuren label[for="paars"] {
+  background-color: purple;
+}
+
+.kleuren input:checked + label {
+  box-shadow: inset 0 0 0 2px black;
+}
+
+.kleuren input:focus + label {
+  box-shadow: inset 0 0 0 4px white;
 }
 
 .filteranimatie {
-    animation-name: filter-opzij;
-    animation-duration: 1.3s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+  animation-name: filter-opzij;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .kleuren section {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .kleuren section:nth-child(1) {
-    background-color: var(--rood);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  background-color: var(--rood);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .kleuren section:nth-child(2) {
-    background-color: var(--groen);
+  background-color: var(--groen);
 }
 
 .kleuren section:nth-child(3) {
-    background-color: var(--geel);
+  background-color: var(--geel);
 }
 
 .kleuren section:nth-child(4) {
-    background-color: var(--blauw);
+  background-color: var(--blauw);
 }
 
 .kleuren section:nth-child(5) {
-    background-color: var(--paars);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  background-color: var(--paars);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #volgende {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    font-size: 1.5em;
-    color: var(--geel);
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 1.5em;
+  color: var(--geel);
 }
 
 #opnieuw {
-    display: none;
-    margin-top: 10px;
-    font-size: 1.5em;
-    color: var(--geel);
-    cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: var(--geel);
+  cursor: pointer;
 }
 
 #opnieuw:hover {
-    -webkit-transform: rotate(360deg);
-    -webkit-transition-duration: 1s;
-    -webkit-transition-delay: now;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+  -webkit-transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+  -webkit-transition-delay: now;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
 }
+
+#opnieuw
 
 /* BRON https://stackoverflow.com/questions/6410730/css-endless-rotation-animation */
 
 /* LANDEN */
 .landen {
-    display: none;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
-.landen div {
-    display: flex;
-    font-size: 1.5em;
-    border-radius: 10px;
-    background-color: var(--wit);
-    width: 400px;
-    margin-top: 10px;
+.landen ul {
+  display: flex;
+  font-size: 1.5em;
+  border-radius: 10px;
+  background-color: var(--wit);
+  width: 400px;
+  margin-top: 10px;
 }
 
-
-.landen div section {
-    padding: 0 15px;
-    margin: auto;
-    cursor: pointer;
+.landen ul li {
+  padding: 0 15px;
+  margin: auto;
+  cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
 
 /* KEYFRAMES ANIMATIES */
 
 @keyframes filter-opzij {
+  25% {
+    left: 500px;
+  }
 
-    25% {
-        left: 500px
-    }
+  50% {
+    left: 1200px;
+  }
 
-    50% {
-        left: 1200px
-    }
+  75% {
+    left: 1600px;
+  }
 
-    75% {
-        left: 1600px
-    }
-
-
-    100% {
-        left: 2500px
-    }
-
+  100% {
+    left: 2500px;
+  }
 }
-
 
 @keyframes menu-openen {
+  0% {
+    right: -2000px;
+  }
 
-    0% {
-        right: -2000px;
-    }
+  50% {
+    right: -1000px;
+  }
 
-
-    50% {
-        right: -1000px;
-    }
-
-
-    100% {
-        right: 0px;
-    }
-
+  100% {
+    right: 0px;
+  }
 }
-
 
 @keyframes menu-sluiten {
+  0% {
+    right: 0px;
+  }
 
-    0% {
-        right: 0px;
-    }
+  50% {
+    right: -1000px;
+  }
 
-    50% {
-        right: -1000px;
-    }
-
-    100% {
-        right: -2000px;
-    }
+  100% {
+    right: -2000px;
+  }
 }
-
 
 /* MAIN */
 
 main {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
-main div:first-child {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    align-items: center;
-    grid-gap: 20px;
-    max-width: 1200px;
-    padding: 10px;
+main ul:first-child {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  grid-gap: 20px;
+  max-width: 1200px;
+  padding: 10px;
 }
 
-main div:first-child section {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    /*height: 320px;*/
-    width: auto;
+main ul:first-child li {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /*height: 320px;*/
+  width: auto;
 }
 
-main div:first-child section h3 {
-    padding: 3px 14px;
-    position: absolute;
-    font-size: 0.7em;
-    top: 0px;
-    background-color: var(--wit);
-    border-bottom-right-radius: 10px;
+main ul:first-child li.hide-kleur,
+main ul:first-child li.hide-land {
+  display: none;
 }
 
-main div:first-child section img {
-    width: 100%;
-    height: auto;
-    border-radius: 17px;
+main ul:first-child li h3 {
+  padding: 3px 14px;
+  position: absolute;
+  font-size: 0.7em;
+  top: 0px;
+  background-color: var(--wit);
+  border-bottom-right-radius: 10px;
 }
 
-main div:first-child section p {
-    padding: 7px 10px 0px 10px;
+main ul:first-child li img {
+  width: 100%;
+  height: auto;
+  border-radius: 17px;
 }
 
-main div:first-child section:empty {
-    display: none;
+main ul:first-child li p {
+  padding: 7px 10px 0px 10px;
+}
+
+main ul:first-child li:empty {
+  display: none;
 }
 
 @media only screen and (max-width: 920px) {
-    main div:first-child {
-        grid-template-columns: auto auto auto;
-    }
+  main ul:first-child {
+    grid-template-columns: auto auto auto;
+  }
 
-    .opgeslagenlijst {
-        grid-template-columns: auto auto;
-    }
+  .opgeslagenlijst {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    main div:first-child {
-        grid-template-columns: auto auto;
-    }
+  main ul:first-child {
+    grid-template-columns: auto auto;
+  }
 
-    .opgeslagenlijst {
-        grid-template-columns: auto;
-    }
+  .opgeslagenlijst {
+    grid-template-columns: auto;
+  }
 }
 
 .fotolijst {
-    display: inline-block;
+  display: inline-block;
 }
 
 .keyAnimatie {
-    grid-gap: 10px;
-    grid-template-columns: repeat(110, calc(50% - 40px)) !important;
-    grid-template-rows: minmax(150px, 1fr);
-    position: fixed;
-    overflow-y: scroll;
-    max-width: auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(110, calc(50% - 40px)) !important;
+  grid-template-rows: minmax(150px, 1fr);
+  position: fixed;
+  overflow-y: scroll;
+  max-width: auto;
 }
 
 .keyAnimatie section {
-    height: auto;
-    width: 300px;
+  height: auto;
+  width: 300px;
 }
