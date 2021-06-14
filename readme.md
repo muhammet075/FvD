@@ -29,7 +29,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 6. https://fontawesome.com/
 7. https://fonts.google.com/specimen/Kanit
 
-## Opdracht 1
+# Opdracht 1
 
 ## 21 April - Voortgangsgesprek
 
@@ -57,7 +57,7 @@ Na dat mijn animaties klaar waren, heb ik de body een display flex gegeven en ee
 
 <br/>
 
-## Opdracht 2
+# Opdracht 2
 
 ## Voortgang
 
@@ -77,6 +77,8 @@ Als een gebruiker een foto als favoriet wilt maken, dan klikt de gebruiker op he
 
 ### Voor de herkansing
 
+Voor de herkansing had ik voor elke filter optie een aparte functie gemaakt, bijvoorbeeld voor land, kleur enz. Ook had ik per favorietster een aparte variabel aangemaakt waardoor mijn JS regels rond de 1000 was. Na de herkansing met een foreach functie, is het nu minder dan 200 regels. Ook de code is overzichtelijker geworden.
+
 <img src="https://i.ibb.co/7jvhWDV/Schermafbeelding-2021-06-08-om-15-27-22.png" alt="Filteren">
 Hierboven een screenshot van de kleur filter voor geel.
 <br/><br/>
@@ -86,6 +88,10 @@ Hierboven een screenshot om een favoriet aan te maken.
 ### Na de herkansing
 
 Ik heb nu geleerd hoe ik met for each loops in javascript kan werken, bijvoorbeeld dat alle afbeeldingen geselecteerd worden, bijvoorbeeld kleuren filteren, in plaats van steeds een aparte functie per kleur heb ik geleerd om 1 functie te schrijven voor alle kleuren met een foreach functie. Ook heb ik geleerd hoe je met queryselectorall alles kan selecteren en dan met een foreach een nieuwe element aanmaken met behulp van appendChild, de dichtsbijste kind element.
+
+Code na herkansing:
+<img src="https://i.ibb.co/H21DFB9/Schermafbeelding-2021-06-14-om-03-22-29.png" alt="code"/>
+<img src="https://i.ibb.co/fGvbDr9/Schermafbeelding-2021-06-14-om-03-17-36.png" alt="code"/>
 
 ### EXTRA BRONNEN AFBEELDINGEN OPDRACHT 2
 
