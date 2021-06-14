@@ -71,15 +71,21 @@ Ik begon eerst met de HTML en CSS. Ik heb de site vormgegeven en ik heb gebruik 
 
 ## JavaScript
 
-Met JavaScript heb ik ervoor gezorgd dat als er op kleur gesorteerdt wordt, dat alle andere kleuren waar de gebruiker niet op geklikt heeft een display none krijgen. Het wordt getoggled. Daarna komt de landen filter optie in beeld en dan krijgen de spans in de divs van de kleuren een display none of block, dus daar wordt het ook getoggled. Daarna komt er een reset knop in beeld en als daar op geklikt wordt dan krijgt alles een display block.
+Met JavaScript heb ik ervoor gezorgd dat als er op een kleur en/of land gefilterd en gesorteerd wordt dat de li waar in de afbeelding zich bevind, (met 2 classes, land en kleur) een extra class krijgen met een display none. Aan het einde van de sorteer proces komt er een reset knop in beeld waarbij alle li's een display block krijgen, dus de class met de display none gaat weg.
 
 Als een gebruiker een foto als favoriet wilt maken, dan klikt de gebruiker op het sterretje. De sterretje maakt een nieuw html img element aan, en de src wordt de link van de afbeelding waar de gebruiker op geklikt heeft. De sterretje wordt dan geel van kleur en als de gebruikter weer op de sterretje klikt dan wordt de foto getoggled en verdwijnt uit de favorieten lijst. De favorieten lijst heeft ook een zero state dus als het leeg is.
+
+### Voor de herkansing
 
 <img src="https://i.ibb.co/7jvhWDV/Schermafbeelding-2021-06-08-om-15-27-22.png" alt="Filteren">
 Hierboven een screenshot van de kleur filter voor geel.
 <br/><br/>
 <img src="https://i.ibb.co/55TKSKG/Schermafbeelding-2021-06-08-om-15-27-35.png" alt="Favoriet">
 Hierboven een screenshot om een favoriet aan te maken.
+
+### Na de herkansing
+
+Ik heb nu geleerd hoe ik met for each loops in javascript kan werken, bijvoorbeeld dat alle afbeeldingen geselecteerd worden, bijvoorbeeld kleuren filteren, in plaats van steeds een aparte functie per kleur heb ik geleerd om 1 functie te schrijven voor alle kleuren met een foreach functie. Ook heb ik geleerd hoe je met queryselectorall alles kan selecteren en dan met een foreach een nieuwe element aanmaken met behulp van appendChild, de dichtsbijste kind element.
 
 ### EXTRA BRONNEN AFBEELDINGEN OPDRACHT 2
 
