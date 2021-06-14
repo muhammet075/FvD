@@ -89,6 +89,8 @@ Hierboven een screenshot om een favoriet aan te maken.
 
 Ik heb nu geleerd hoe ik met for each loops in javascript kan werken, bijvoorbeeld dat alle afbeeldingen geselecteerd worden, bijvoorbeeld kleuren filteren, in plaats van steeds een aparte functie per kleur heb ik geleerd om 1 functie te schrijven voor alle kleuren met een foreach functie. Ook heb ik geleerd hoe je met queryselectorall alles kan selecteren en dan met een foreach een nieuwe element aanmaken met behulp van appendChild, de dichtsbijste kind element.
 
+Verder heb ik ervoor gezorgd dat de HTML meer semantischer is, door bijvoorbeeld divjes en sections te vervangen door ul en li's, spans wat een functie had als knop, te vervangen door de button element etc. Ook heb ik paar design punten verbetered, zoals een witte rondje op een witte achtergrond, veranderd door het ronde grijs te maken, de gele ster op de afbeelding wat soms moeilijk te zien was. Ik heb de sterretjes een witte achtergrond gegeven waardoor de contrast beter is.
+
 Code na herkansing:
 <img src="https://i.ibb.co/H21DFB9/Schermafbeelding-2021-06-14-om-03-22-29.png" alt="code"/>
 <img src="https://i.ibb.co/fGvbDr9/Schermafbeelding-2021-06-14-om-03-17-36.png" alt="code"/>
