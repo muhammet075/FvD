@@ -12,7 +12,7 @@ function favorietOpslaan(event) {
   console.log(favorietKnop);
   if (favorietKnop.classList.contains("klik")) {
     favorietKnop.classList.remove("klik");
-    favorietKnop.style.color = "#fff200";
+    favorietKnop.style.color = "#f7b704";
 
     var fotoNieuw = document.createElement("img");
 
@@ -29,7 +29,7 @@ function favorietOpslaan(event) {
   } else {
     //de favorietknop krijgt de class klik terug en de kleur wordt zwart
     favorietKnop.classList.add("klik");
-    favorietKnop.style.color = "#000";
+    favorietKnop.style.color = "#3d3d3d";
 
     var favoFoto = document.querySelector("[data-id = '" + fotoId + "']");
     console.log(favoFoto);
