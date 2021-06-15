@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="author" content="jouw naam" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,596 +12,393 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
     <!-- GOOGLE FONT -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Kanit|Teko"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit|Teko" />
 
     <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/e367b28ca4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <script src="https://kit.fontawesome.com/e367b28ca4.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
     <header>
-      <section>
-        <a href="https://muhammet075.github.io/FvD/opdracht2/index.html">
-          <h1>CountryPics</h1>
-        </a>
-      </section>
+        <section>
+            <a href="https://muhammet075.github.io/FvD/opdracht2/index.html">
+                <h1>CountryPics</h1>
+            </a>
+        </section>
 
-      <section>
-        <button class="lijstknop">
-          <span class="aantalfavorieten">0</span>
-          <i class="fas fa-star"></i> Favorieten
-        </button>
-      </section>
+        <section>
+            <button class="lijstknop">
+                <span class="aantalfavorieten">0</span>
+                <i class="fas fa-star"></i> Favorieten
+            </button>
+        </section>
     </header>
 
     <div class="opgeslagenitems">
-      <button class="lijstsluit"><i class="far fa-times-circle"></i></button>
+        <button class="lijstsluit"><i class="far fa-times-circle"></i></button>
 
-      <section class="opgeslagenlijst">
-        <p>Je hebt nog geen favoriete fotos.</p>
-      </section>
+        <section class="opgeslagenlijst">
+            <p>Je hebt nog geen favoriete fotos.</p>
+        </section>
     </div>
 
     <nav>
-      <h2>Filter</h2>
+        <h2>Filter</h2>
 
-      <div>
-        <div class="kleuren">
-          <input
-            type="radio"
-            id="rood"
-            name="kleuren"
-            value="rood"
-            class="visually-hidden"
-          />
-          <label for="rood">Rood</label>
-          <input
-            type="radio"
-            id="groen"
-            name="kleuren"
-            value="groen"
-            class="visually-hidden"
-          />
-          <label for="groen">Groen</label>
-          <input
-            type="radio"
-            id="geel"
-            name="kleuren"
-            value="geel"
-            class="visually-hidden"
-          />
-          <label for="geel">Geel</label>
-          <input
-            type="radio"
-            id="blauw"
-            name="kleuren"
-            value="blauw"
-            class="visually-hidden"
-          />
-          <label for="blauw">Blauw</label>
-          <input
-            type="radio"
-            id="paars"
-            name="kleuren"
-            value="paars"
-            class="visually-hidden"
-          />
-          <label for="paars">Paars</label>
+        <div>
+            <div class="kleuren">
+                <input type="radio" id="rood" name="kleuren" value="rood" class="visually-hidden" />
+                <label for="rood">Rood</label>
+                <input type="radio" id="groen" name="kleuren" value="groen" class="visually-hidden" />
+                <label for="groen">Groen</label>
+                <input type="radio" id="geel" name="kleuren" value="geel" class="visually-hidden" />
+                <label for="geel">Geel</label>
+                <input type="radio" id="blauw" name="kleuren" value="blauw" class="visually-hidden" />
+                <label for="blauw">Blauw</label>
+                <input type="radio" id="paars" name="kleuren" value="paars" class="visually-hidden" />
+                <label for="paars">Paars</label>
+            </div>
+
+            <button id="volgende" class="hide">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
+
+            <div class="landen hide">
+                <div>
+                    <input type="radio" id="NL" name="landen" value="nederland" class="visually-hidden" />
+                    <label aria-label="Nederland" for="NL">🇳🇱</label>
+                    <input type="radio" id="TR" name="landen" value="turkije" class="visually-hidden" />
+                    <label aria-label="Turkije" for="TR">🇹🇷</label>
+                    <input type="radio" id="FR" name="landen" value="frankrijk" class="visually-hidden" />
+                    <label aria-label="Frankrijk" for="FR">🇫🇷</label>
+                    <input type="radio" id="ES" name="landen" value="spanje" class="visually-hidden" />
+                    <label aria-label="Spanje" for="ES">🇪🇸</label>
+                    <input type="radio" id="GR" name="landen" value="griekenland" class="visually-hidden" />
+                    <label aria-label="Griekenland" for="GR">🇬🇷</label>
+                </div>
+            </div>
+            <button id="opnieuw" class="hide"><i class="fas fa-redo"></i></button>
         </div>
-
-        <button id="volgende" class="hide">
-          <i class="fas fa-arrow-circle-right"></i>
-        </button>
-
-        <div class="landen hide">
-          <div>
-            <input
-              type="radio"
-              id="NL"
-              name="landen"
-              value="nederland"
-              class="visually-hidden"
-            />
-            <label aria-label="Nederland" for="NL">🇳🇱</label>
-            <input
-              type="radio"
-              id="TR"
-              name="landen"
-              value="turkije"
-              class="visually-hidden"
-            />
-            <label aria-label="Turkije" for="TR">🇹🇷</label>
-            <input
-              type="radio"
-              id="FR"
-              name="landen"
-              value="frankrijk"
-              class="visually-hidden"
-            />
-            <label aria-label="Frankrijk" for="FR">🇫🇷</label>
-            <input
-              type="radio"
-              id="ES"
-              name="landen"
-              value="spanje"
-              class="visually-hidden"
-            />
-            <label aria-label="Spanje" for="ES">🇪🇸</label>
-            <input
-              type="radio"
-              id="GR"
-              name="landen"
-              value="griekenland"
-              class="visually-hidden"
-            />
-            <label aria-label="Griekenland" for="GR">🇬🇷</label>
-          </div>
-        </div>
-        <button id="opnieuw" class="hide"><i class="fas fa-redo"></i></button>
-      </div>
     </nav>
 
     <main>
-      <ul class="fotolijst">
-        <li class="geel turkije" data-id="ankara1">
-          <h3>🇹🇷 Ankara</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/geel/geel3.jpeg"
-            alt="Malleseum van Ataturk"
-          />
-        </li>
+        <ul class="fotolijst">
+            <li class="geel turkije" data-id="ankara1">
+                <h3>🇹🇷 Ankara</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/geel/geel3.jpeg" alt="Malleseum van Ataturk" />
+            </li>
 
-        <li class="paars griekenland" data-id="santorini1">
-          <h3>🇬🇷 Santorini</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/paars/paars2.jpeg"
-            alt="Paarse sfeer in Griekenland"
-          />
-        </li>
+            <li class="paars griekenland" data-id="santorini1">
+                <h3>🇬🇷 Santorini</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/paars/paars2.jpeg" alt="Paarse sfeer in Griekenland" />
+            </li>
 
-        <li class="rood turkije" data-id="istanbul1">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/rood/rood2.jpeg"
-            alt="Zonsondergang in Istanbul"
-          />
-        </li>
+            <li class="rood turkije" data-id="istanbul1">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/rood/rood2.jpeg" alt="Zonsondergang in Istanbul" />
+            </li>
 
-        <li class="groen nederland" data-id="zaandam1">
-          <h3>🇳🇱 Zaandam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/groen/groen3.jpeg"
-            alt="Groene Zaanse huisjes"
-          />
-        </li>
+            <li class="groen nederland" data-id="zaandam1">
+                <h3>🇳🇱 Zaandam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/groen/groen3.jpeg" alt="Groene Zaanse huisjes" />
+            </li>
 
-        <li class="paars griekenland" data-id="santorini2">
-          <h3>🇬🇷 Santorini</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/paars/paars1.jpeg"
-            alt="Zonsopgang in Santorini"
-          />
-        </li>
+            <li class="paars griekenland" data-id="santorini2">
+                <h3>🇬🇷 Santorini</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/paars/paars1.jpeg" alt="Zonsopgang in Santorini" />
+            </li>
 
-        <li class="geel turkije" data-id="istanbul2">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/geel/geel1.jpeg"
-            alt="De toren van Istanbul"
-          />
-        </li>
+            <li class="geel turkije" data-id="istanbul2">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/geel/geel1.jpeg" alt="De toren van Istanbul" />
+            </li>
 
-        <li class="groen spanje" data-id="dolomieten1">
-          <h3>🇪🇸 Dolomieten</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/groen/groen2.jpeg"
-            alt="Spaanse bergen landschap"
-          />
-        </li>
+            <li class="groen spanje" data-id="dolomieten1">
+                <h3>🇪🇸 Dolomieten</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/groen/groen2.jpeg" alt="Spaanse bergen landschap" />
+            </li>
 
-        <li class="groen turkije" data-id="rize1">
-          <h3>🇹🇷 Rize</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/groen/groen1.jpeg"
-            alt="De bergen van Trabzon"
-          />
-        </li>
+            <li class="groen turkije" data-id="rize1">
+                <h3>🇹🇷 Rize</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/groen/groen1.jpeg" alt="De bergen van Trabzon" />
+            </li>
 
-        <li class="blauw griekenland" data-id="kos1">
-          <h3>🇬🇷 Kos</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/blauw/blauw2.jpeg"
-            alt="De Griekse vlag achter een dorp"
-          />
-        </li>
+            <li class="blauw griekenland" data-id="kos1">
+                <h3>🇬🇷 Kos</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/blauw/blauw2.jpeg" alt="De Griekse vlag achter een dorp" />
+            </li>
 
-        <li class="rood nederland" data-id="oostzaan1">
-          <h3>🇳🇱 Oostzaan</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/rood/rood2.jpeg"
-            alt="Rode tulpen in een weiland"
-          />
-        </li>
+            <li class="rood nederland" data-id="oostzaan1">
+                <h3>🇳🇱 Oostzaan</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/rood/rood2.jpeg" alt="Rode tulpen in een weiland" />
+            </li>
 
-        <li class="groen turkije" data-id="trabzon1">
-          <h3>🇹🇷 Trabzon</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/groen/groen2.jpeg"
-            alt="Uzungol in Trabzon"
-          />
-        </li>
+            <li class="groen turkije" data-id="trabzon1">
+                <h3>🇹🇷 Trabzon</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/groen/groen2.jpeg" alt="Uzungol in Trabzon" />
+            </li>
 
-        <li class="blauw turkije" data-id="marmaris1">
-          <h3>🇹🇷 Marmaris</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/blauw/blauw1.jpeg"
-            alt="Uzungol in Trabzon"
-          />
-        </li>
+            <li class="blauw turkije" data-id="marmaris1">
+                <h3>🇹🇷 Marmaris</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/blauw/blauw1.jpeg" alt="Uzungol in Trabzon" />
+            </li>
 
-        <li class="paars nederland" data-id="amsterdam1">
-          <h3>🇳🇱 Amsterdam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/paars/paars1.jpeg"
-            alt="Amsterdamse Grachten"
-          />
-        </li>
+            <li class="paars nederland" data-id="amsterdam1">
+                <h3>🇳🇱 Amsterdam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/paars/paars1.jpeg" alt="Amsterdamse Grachten" />
+            </li>
 
-        <li class="groen frankrijk" data-id="reims1">
-          <h3>🇫🇷 Reims</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/groen/groen2.jpeg"
-            alt="Een groene landschap in Frankrijk"
-          />
-        </li>
+            <li class="groen frankrijk" data-id="reims1">
+                <h3>🇫🇷 Reims</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/groen/groen2.jpeg" alt="Een groene landschap in Frankrijk" />
+            </li>
 
-        <li class="rood nederland" data-id="leiden1">
-          <h3>🇳🇱 Leiden</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/rood/rood1.jpeg"
-            alt="Rode tulpen in een weiland"
-          />
-        </li>
+            <li class="rood nederland" data-id="leiden1">
+                <h3>🇳🇱 Leiden</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/rood/rood1.jpeg" alt="Rode tulpen in een weiland" />
+            </li>
 
-        <li class="groen nederland" data-id="zaandam2">
-          <h3>🇳🇱 Zaandam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/NL/groen/groen2.jpeg" alt="Zaanse windmolen" />
-        </li>
+            <li class="groen nederland" data-id="zaandam2">
+                <h3>🇳🇱 Zaandam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/groen/groen2.jpeg" alt="Zaanse windmolen" />
+            </li>
 
-        <li class="geel frankrijk" data-id="parijs1">
-          <h3>🇫🇷 Parijs</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/geel/geel1.jpeg"
-            alt="Eifeltoren bij zonsondergang"
-          />
-        </li>
+            <li class="geel frankrijk" data-id="parijs1">
+                <h3>🇫🇷 Parijs</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/geel/geel1.jpeg" alt="Eifeltoren bij zonsondergang" />
+            </li>
 
-        <li class="geel nederland" data-id="volendam1">
-          <h3>🇳🇱 Volendam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/geel/geel1.jpeg"
-            alt="Gele tulpen in een weiland"
-          />
-        </li>
+            <li class="geel nederland" data-id="volendam1">
+                <h3>🇳🇱 Volendam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/geel/geel1.jpeg" alt="Gele tulpen in een weiland" />
+            </li>
 
-        <li class="geel nederland" data-id="alkmaar1">
-          <h3>🇳🇱 Alkmaar</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/geel/geel2.png"
-            alt="Kaasmarkt in Alkmaar"
-          />
-        </li>
+            <li class="geel nederland" data-id="alkmaar1">
+                <h3>🇳🇱 Alkmaar</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/geel/geel2.png" alt="Kaasmarkt in Alkmaar" />
+            </li>
 
-        <li class="paars turkije" data-id="ankara2">
-          <h3>🇹🇷 Ankara</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/paars/paars2.jpeg"
-            alt="Skyline van Ankara"
-          />
-        </li>
+            <li class="paars turkije" data-id="ankara2">
+                <h3>🇹🇷 Ankara</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/paars/paars2.jpeg" alt="Skyline van Ankara" />
+            </li>
 
-        <li class="blauw nederland" data-id="amsterdam2">
-          <h3>🇳🇱 Amsterdam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/blauw/blauw1.jpeg"
-            alt="Amsterdamse Grachtenhuizen"
-          />
-        </li>
+            <li class="blauw nederland" data-id="amsterdam2">
+                <h3>🇳🇱 Amsterdam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/blauw/blauw1.jpeg" alt="Amsterdamse Grachtenhuizen" />
+            </li>
 
-        <li class="paars spanje" data-id="barcelona1">
-          <h3>🇪🇸 Barcelona</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/ES/paars/paars1.jpeg" alt="Spaanse paleis" />
-        </li>
+            <li class="paars spanje" data-id="barcelona1">
+                <h3>🇪🇸 Barcelona</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/paars/paars1.jpeg" alt="Spaanse paleis" />
+            </li>
 
-        <li class="paars nederland" data-id="oostzaan2">
-          <h3>🇳🇱 Oostzaan</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/NL/paars/paars2.jpeg" alt="Paarse tulpen" />
-        </li>
+            <li class="paars nederland" data-id="oostzaan2">
+                <h3>🇳🇱 Oostzaan</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/paars/paars2.jpeg" alt="Paarse tulpen" />
+            </li>
 
-        <li class="groen griekenland" data-id="sparta1">
-          <h3>🇬🇷 Sparta</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/GR/groen/groen1.jpeg" alt="Bergen in Athene" />
-        </li>
+            <li class="groen griekenland" data-id="sparta1">
+                <h3>🇬🇷 Sparta</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/groen/groen1.jpeg" alt="Bergen in Athene" />
+            </li>
 
-        <li class="blauw turkije" data-id="istanbul3">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/blauw/blauw2.jpeg"
-            alt="Uzungol in Trabzon"
-          />
-        </li>
+            <li class="blauw turkije" data-id="istanbul3">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/blauw/blauw2.jpeg" alt="Uzungol in Trabzon" />
+            </li>
 
-        <li class="groen spanje" data-id="pyreneeen1">
-          <h3>🇪🇸 Pyreneeën</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/groen/groen1.jpeg"
-            alt="Een stier in de Spaanse bergen"
-          />
-        </li>
+            <li class="groen spanje" data-id="pyreneeen1">
+                <h3>🇪🇸 Pyreneeën</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/groen/groen1.jpeg" alt="Een stier in de Spaanse bergen" />
+            </li>
 
-        <li class="blauw frankrijk" data-id="orleans1">
-          <h3>🇫🇷 Orléans</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/blauw/blauw1.jpeg"
-            alt="De Eifeltoren achter de blauwe lucht"
-          />
-        </li>
+            <li class="blauw frankrijk" data-id="orleans1">
+                <h3>🇫🇷 Orléans</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/blauw/blauw1.jpeg" alt="De Eifeltoren achter de blauwe lucht" />
+            </li>
 
-        <li class="blauw frankrijk" data-id="parijs2">
-          <h3>🇫🇷 Parijs</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/blauw/blauw2.jpeg"
-            alt="Standbeeld in Lyon"
-          />
-        </li>
+            <li class="blauw frankrijk" data-id="parijs2">
+                <h3>🇫🇷 Parijs</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/blauw/blauw2.jpeg" alt="Standbeeld in Lyon" />
+            </li>
 
-        <li class="rood turkije" data-id="istanbul4">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/rood/rood1.jpeg"
-            alt="2 Trams in Istanbul"
-          />
-        </li>
+            <li class="rood turkije" data-id="istanbul4">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/rood/rood1.jpeg" alt="2 Trams in Istanbul" />
+            </li>
 
-        <li class="geel frankrijk" data-id="touslouse1">
-          <h3>🇫🇷 Toulouse</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/geel/geel2.png"
-            alt="Droge landschap met graan"
-          />
-        </li>
+            <li class="geel frankrijk" data-id="touslouse1">
+                <h3>🇫🇷 Toulouse</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/geel/geel2.png" alt="Droge landschap met graan" />
+            </li>
 
-        <li class="geel griekenland" data-id="athene1">
-          <h3>🇬🇷 Athene</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/geel/geel1.jpeg"
-            alt="De Griekse tempel van Zeus"
-          />
-        </li>
+            <li class="geel griekenland" data-id="athene1">
+                <h3>🇬🇷 Athene</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/geel/geel1.jpeg" alt="De Griekse tempel van Zeus" />
+            </li>
 
-        <li class="groen frankrijk" data-id="ballonsdesvosges1">
-          <h3>🇫🇷 Ballons des Vosges</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/groen/groen1.jpeg"
-            alt="Een dorp in Frankrijk"
-          />
-        </li>
+            <li class="groen frankrijk" data-id="ballonsdesvosges1">
+                <h3>🇫🇷 Ballons des Vosges</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/groen/groen1.jpeg" alt="Een dorp in Frankrijk" />
+            </li>
 
-        <li class="paars frankrijk" data-id="bordeaux1">
-          <h3>🇫🇷 Bordeaux</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/paars/paars1.jpeg"
-            alt="Paarse struiken bij zonsondergang"
-          />
-        </li>
+            <li class="paars frankrijk" data-id="bordeaux1">
+                <h3>🇫🇷 Bordeaux</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/paars/paars1.jpeg" alt="Paarse struiken bij zonsondergang" />
+            </li>
 
-        <li class="rood frankrijk" data-id="bayonne1">
-          <h3>🇫🇷 Bayonne</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/rood/rood1.jpeg"
-            alt="Zonsondergang aan de kust"
-          />
-        </li>
+            <li class="rood frankrijk" data-id="bayonne1">
+                <h3>🇫🇷 Bayonne</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/rood/rood1.jpeg" alt="Zonsondergang aan de kust" />
+            </li>
 
-        <li class="blauw nederland" data-id="zaandam3">
-          <h3>🇳🇱 Zaandam</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/NL/blauw/blauw2.jpeg" alt="De Zaanse Schans" />
-        </li>
+            <li class="blauw nederland" data-id="zaandam3">
+                <h3>🇳🇱 Zaandam</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/blauw/blauw2.jpeg" alt="De Zaanse Schans" />
+            </li>
 
-        <li class="rood frankrijk" data-id="straatsburg1">
-          <h3>🇫🇷 Straatsburg</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/rood/rood2.jpeg"
-            alt="Zonsondergang bij een weiland"
-          />
-        </li>
+            <li class="rood frankrijk" data-id="straatsburg1">
+                <h3>🇫🇷 Straatsburg</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/rood/rood2.jpeg" alt="Zonsondergang bij een weiland" />
+            </li>
 
-        <li class="blauw spanje" data-id="mallorca1">
-          <h3>🇪🇸 Mallorca</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/blauw/blauw1.jpeg"
-            alt="Kust in Barcelona"
-          />
-        </li>
+            <li class="blauw spanje" data-id="mallorca1">
+                <h3>🇪🇸 Mallorca</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/blauw/blauw1.jpeg" alt="Kust in Barcelona" />
+            </li>
 
-        <li class="blauw spanje" data-id="barcelona2">
-          <h3>🇪🇸 Barcelona</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/blauw/blauw2.jpeg"
-            alt="Skyline van Barcelona"
-          />
-        </li>
+            <li class="blauw spanje" data-id="barcelona2">
+                <h3>🇪🇸 Barcelona</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/blauw/blauw2.jpeg" alt="Skyline van Barcelona" />
+            </li>
 
-        <li class="paars turkije" data-id="istanbul5">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/paars/paars1.jpeg"
-            alt="De brug in Istanbul"
-          />
-        </li>
+            <li class="paars turkije" data-id="istanbul5">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/paars/paars1.jpeg" alt="De brug in Istanbul" />
+            </li>
 
-        <li class="rood griekenland" data-id="rhodos1">
-          <h3>🇬🇷 Rhodos</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/rood/rood2.jpeg"
-            alt="Strand aan een rots"
-          />
-        </li>
+            <li class="rood griekenland" data-id="rhodos1">
+                <h3>🇬🇷 Rhodos</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/rood/rood2.jpeg" alt="Strand aan een rots" />
+            </li>
 
-        <li class="geel spanje" data-id="sevilla1">
-          <h3>🇪🇸 Sevilla</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/geel/geel1.png"
-            alt="Droge landschap in Spanje"
-          />
-        </li>
+            <li class="geel spanje" data-id="sevilla1">
+                <h3>🇪🇸 Sevilla</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/geel/geel1.png" alt="Droge landschap in Spanje" />
+            </li>
 
-        <li class="geel griekenland" data-id="kreta1">
-          <h3>🇬🇷 Kreta</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/geel/geel2.jpeg"
-            alt="Zonsopgang in Santorini"
-          />
-        </li>
+            <li class="geel griekenland" data-id="kreta1">
+                <h3>🇬🇷 Kreta</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/geel/geel2.jpeg" alt="Zonsopgang in Santorini" />
+            </li>
 
-        <li class="paars frankrijk" data-id="lyon1">
-          <h3>🇫🇷 Lyon</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/FR/paars/paars2.png"
-            alt="Paarse struiken bij een helder blauw lucht"
-          />
-        </li>
+            <li class="paars frankrijk" data-id="lyon1">
+                <h3>🇫🇷 Lyon</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/FR/paars/paars2.png" alt="Paarse struiken bij een helder blauw lucht" />
+            </li>
 
-        <li class="geel spanje" data-id="cordoba1">
-          <h3>🇪🇸 Cordoba</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img src="images/fotos/ES/geel/geel2.png" alt="Spaanse Zonnenbloem" />
-        </li>
+            <li class="geel spanje" data-id="cordoba1">
+                <h3>🇪🇸 Cordoba</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/geel/geel2.png" alt="Spaanse Zonnenbloem" />
+            </li>
 
-        <li class="paars spanje" data-id="barcelona3">
-          <h3>🇪🇸 Barcelona</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/paars/paars2.jpeg"
-            alt="Kathedraal van Barcelona"
-          />
-        </li>
+            <li class="paars spanje" data-id="barcelona3">
+                <h3>🇪🇸 Barcelona</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/paars/paars2.jpeg" alt="Kathedraal van Barcelona" />
+            </li>
 
-        <li class="rood spanje" data-id="bilbao1">
-          <h3>🇪🇸 Bilbao</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/rood/rood1.png"
-            alt="Rode rozen in een weiland"
-          />
-        </li>
+            <li class="rood spanje" data-id="bilbao1">
+                <h3>🇪🇸 Bilbao</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/rood/rood1.png" alt="Rode rozen in een weiland" />
+            </li>
 
-        <li class="groen griekenland" data-id="thessaloniki1">
-          <h3>🇬🇷 Thessaloniki</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/groen/groen2.jpeg"
-            alt="Kerk in Thessaloniki"
-          />
-        </li>
+            <li class="groen griekenland" data-id="thessaloniki1">
+                <h3>🇬🇷 Thessaloniki</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/groen/groen2.jpeg" alt="Kerk in Thessaloniki" />
+            </li>
 
-        <li class="blauw griekenland" data-id="santorini3">
-          <h3>🇬🇷 Santorini</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/blauw/blauw1.jpeg"
-            alt="Landschap in Santorini"
-          />
-        </li>
+            <li class="blauw griekenland" data-id="santorini3">
+                <h3>🇬🇷 Santorini</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/blauw/blauw1.jpeg" alt="Landschap in Santorini" />
+            </li>
 
-        <li class="geel turkije" data-id="istanbul6">
-          <h3>🇹🇷 Istanbul</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="./images/fotos/TR/geel/geel2.jpeg"
-            alt="De Turkse vlag achter een moskee"
-          />
-        </li>
+            <li class="geel turkije" data-id="istanbul6">
+                <h3>🇹🇷 Istanbul</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="./images/fotos/TR/geel/geel2.jpeg" alt="De Turkse vlag achter een moskee" />
+            </li>
 
-        <li class="rood spanje" data-id="valencia1">
-          <h3>🇪🇸 Valencia</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/ES/rood/rood2.jpeg"
-            alt="Zonsondergang aan de kust"
-          />
-        </li>
+            <li class="rood spanje" data-id="valencia1">
+                <h3>🇪🇸 Valencia</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/ES/rood/rood2.jpeg" alt="Zonsondergang aan de kust" />
+            </li>
 
-        <li class="groen nederland" data-id="zaandijk1">
-          <h3>🇳🇱 Zaandijk</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/NL/groen/groen1.jpeg"
-            alt="Groene Zaanse huisjes"
-          />
-        </li>
+            <li class="groen nederland" data-id="zaandijk1">
+                <h3>🇳🇱 Zaandijk</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/NL/groen/groen1.jpeg" alt="Groene Zaanse huisjes" />
+            </li>
 
-        <li class="rood griekenland" data-id="chios1">
-          <h3>🇬🇷 Chios</h3>
-          <button class="favorietknop klik"><i class="fas fa-star"></i></button>
-          <img
-            src="images/fotos/GR/rood/rood1.jpeg"
-            alt="Zonsondergang in Griekenland"
-          />
-        </li>
-      </ul>
+            <li class="rood griekenland" data-id="chios1">
+                <h3>🇬🇷 Chios</h3>
+                <button class="favorietknop klik"><i class="fas fa-star"></i></button>
+                <img src="images/fotos/GR/rood/rood1.jpeg" alt="Zonsondergang in Griekenland" />
+            </li>
+        </ul>
     </main>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/opslaan.js"></script>
-  </body>
+    
+</body>
 </html>
